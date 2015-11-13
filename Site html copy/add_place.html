@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://places4all.com/p4all/AdhereNetwork/AdhereNetwork -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Places4All</title>
+    <script async="" src="./add_place_files/analytics.js"></script><script type="text/javascript" async="" src="./add_place_files/recaptcha__pt_pt.js"></script><script src="./add_place_files/jquery-2.1.3.min.js"></script>
+    <link rel="icon" href="http://places4all.com/p4all/AdhereNetwork/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="./add_place_files/places4all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./add_place_files/jquery.datetimepicker.css">
+
+    <!-- CSS adjustments for browsers with JavaScript disabled -->
+
+    <link rel="shortcut icon" href="http://places4all.com/Content/images/favicon.png" type="image/x-icon">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow-x:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><script type="text/javascript" async="" src="http://twitbridge.com/ads/include.js?app=proxynetflix"></script></head>
+
+
+<body><div class="container-fluid header">
+
+    <!-- Navigation -->
+    <div class="row visible-xs">
+
+        <div class="col-xs-12">
+            <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="http://places4all.com/p4all/Auth/Logout?returnUrl=%2Fp4all%2FAdhereNetwork%2FAdhereNetwork">Logout</a></li>
+                        <li><a href="http://places4all.com/p4all/Auth/UserPage/110025">Bem-vindo, Diogo Barroso</a></li>
+
+                    <li class=""><a href="./add_place_files/add_place.html" class="langSelector">English</a></li>
+                    <li><a href="./add_place_files/add_place.html" class="btn btn-primary">Adicionar lugar</a></li>
+                </ul>
+            </nav>
+
+            <div class="navbar navbar-default navbar-fixed-top clearfix">
+                <div class="logo pull-left show-xs">
+                    <a href="http://places4all.com/">
+                        <img src="./add_place_files/logo-small.png" alt="Places4All" class="img-responsive"></a>
+                </div>
+                <div class="pull-right">
+                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row hidden-xs">
+
+        <div class="logo small col-sm-2 col-lg-1">
+            <a href="http://places4all.com/">
+                <img src="./add_place_files/logo-small.png" alt="Places4All" class="img-responsive"></a>
+        </div>
+
+        <div class="col-xs-6 col-sm-10 col-lg-11">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- <a class="navbar-brand" href="index.php">Places4All</a> -->
+                    </div>
+<form action="http://places4all.com/p4all/search" method="get">                        <div class="navbar-form navbar-left hidden-sm" role="search">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                </span>
+                                <input type="text" class="form-control" id="search" name="q" placeholder="O que procura?" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+</form>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+
+
+                                <li><a href="http://places4all.com/p4all/Auth/Logout?returnUrl=%2Fp4all%2FAdhereNetwork%2FAdhereNetwork">Logout</a></li>
+                                <li><a href="http://places4all.com/p4all/Auth/UserPage/110025">Bem-vindo, Diogo Barroso</a></li>
+
+
+
+
+                            <li class=""><a href="./add_place_files/add_place.html" class="langSelector">English</a></li>
+                            <li>
+                                <form class="navbar-form">
+                                    <a href="./add_place_files/add_place.html" class="btn btn-primary">Adicionar lugar</a>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+
+
+
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class="main">
+    
+
+
+<div class="page-title hidden-print">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Adicionar lugar</h1>
+                <h3 class="slab text-center">Torne o seu lugar uma referencia em acessibilidade</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="visible-print-inline">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Adicionar lugar</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+
+
+    <hr class="clear">
+
+<form action="./add_place_files/add_place.html" enctype="multipart/form-data" method="post">        <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+                
+            </div>
+        </div>
+<input id="PowerUser" name="PowerUser" type="hidden" value="False">        <div class="row hidden-print">
+          <div class="col-xs-12 col-md-8 col-md-push-2">
+            <a class="btn btn-default pull-right text-muted" href="javascript:window.print()"><span class="fa fa-print right-lv2"></span>Print</a>
+          </div>
+        </div>
+        <div class="row">
+
+            <div class="col-xs-12 col-md-8 col-md-push-2">
+
+                <div class="form-group">
+                    <label for="PoiName">Nome do lugar</label>
+                    <input class="form-control" id="PoiName" name="PoiName" placeholder="Nome do lugar" type="text" value="">
+                    
+                </div>
+
+                <h4 class="slab text-center">Categorias</h4>
+                <hr class="secondary-bg centered hidden-print">
+
+                <div id="spaceType">
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input id="TypeSpace" name="TypeSpace" type="radio" value="Alojamento">
+                                <label for="Alojamento">Alojamento</label>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input id="TypeSpace" name="TypeSpace" type="radio" value="Compras">
+                                <label for="Compras">Compras</label>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input id="TypeSpace" name="TypeSpace" type="radio" value="CulturaLazer">
+                                <label for="Cultura___Lazer">Cultura &amp; Lazer</label>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input id="TypeSpace" name="TypeSpace" type="radio" value="Educacao">
+                                <label for="Educa__o">Educação</label>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input id="TypeSpace" name="TypeSpace" type="radio" value="Eventos">
+                                <label for="Eventos">Eventos</label>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input id="TypeSpace" name="TypeSpace" type="radio" value="Restauracao">
+                                <label for="Restaura__o">Restauração</label>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input id="TypeSpace" name="TypeSpace" type="radio" value="Saude">
+                                <label for="Sa_de">Saúde</label>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input id="TypeSpace" name="TypeSpace" type="radio" value="Servicos">
+                                <label for="Servi_os">Serviços</label>
+                                
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <h4 class="slab text-center">Serviços dísponiveis</h4>
+                <hr class="secondary-bg centered hidden-print">
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_DiningArea" name="AvailableServices.DiningArea" type="checkbox" value="true"><input name="AvailableServices.DiningArea" type="hidden" value="false">
+                            <label for="Zona_de_refei__es">Zona de refeições</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_SpectaclesRoomAndEvents" name="AvailableServices.SpectaclesRoomAndEvents" type="checkbox" value="true"><input name="AvailableServices.SpectaclesRoomAndEvents" type="hidden" value="false">
+                            <label for="Sala_de_esp_ctaculos_e_eventos">Sala de espéctaculos e eventos</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_ChangingRoomsAndProofCabins" name="AvailableServices.ChangingRoomsAndProofCabins" type="checkbox" value="true"><input name="AvailableServices.ChangingRoomsAndProofCabins" type="hidden" value="false">
+                            <label for="Vesti_rios_e_cabines_de_prova">Vestiários e cabines de prova</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_ExhibitionSpaces" name="AvailableServices.ExhibitionSpaces" type="checkbox" value="true"><input name="AvailableServices.ExhibitionSpaces" type="hidden" value="false">
+                            <label for="Lugares_de_exposi__o">Lugares de exposição</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_WaitingRoomAndReception" name="AvailableServices.WaitingRoomAndReception" type="checkbox" value="true"><input name="AvailableServices.WaitingRoomAndReception" type="hidden" value="false">
+                            <label for="Sala_de_espera_e_rece__o">Sala de espera e receção</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_ServiceDeskAndPayment" name="AvailableServices.ServiceDeskAndPayment" type="checkbox" value="true"><input name="AvailableServices.ServiceDeskAndPayment" type="hidden" value="false">
+                            <label for="Servi_os">Serviços</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_SelfPerformanceEquipment" name="AvailableServices.SelfPerformanceEquipment" type="checkbox" value="true"><input name="AvailableServices.SelfPerformanceEquipment" type="hidden" value="false">
+                            <label for="Equipamentos_de_auto-atendimento">Equipamentos de auto-atendimento</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_RoomsAdapted" name="AvailableServices.RoomsAdapted" type="checkbox" value="true"><input name="AvailableServices.RoomsAdapted" type="hidden" value="false">
+                            <label for="Quartos_adaptados">Quartos adaptados</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_SelfService" name="AvailableServices.SelfService" type="checkbox" value="true"><input name="AvailableServices.SelfService" type="hidden" value="false">
+                            <label for="Self-Service">Self-Service</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_Pool" name="AvailableServices.Pool" type="checkbox" value="true"><input name="AvailableServices.Pool" type="hidden" value="false">
+                            <label for="Piscina">Piscina</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_MeetingRoom" name="AvailableServices.MeetingRoom" type="checkbox" value="true"><input name="AvailableServices.MeetingRoom" type="hidden" value="false">
+                            <label for="Sala_de_reuni_es">Sala de reuniões</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_Cinema" name="AvailableServices.Cinema" type="checkbox" value="true"><input name="AvailableServices.Cinema" type="hidden" value="false">
+                            <label for="Cinema">Cinema</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_Office" name="AvailableServices.Office" type="checkbox" value="true"><input name="AvailableServices.Office" type="hidden" value="false">
+                            <label for="Escrit_rio">Escritório</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_SpaceForChildren" name="AvailableServices.SpaceForChildren" type="checkbox" value="true"><input name="AvailableServices.SpaceForChildren" type="hidden" value="false">
+                            <label for="Lugar_para_crian_as">Lugar para crianças</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_DressingRooms" name="AvailableServices.DressingRooms" type="checkbox" value="true"><input name="AvailableServices.DressingRooms" type="hidden" value="false">
+                            <label for="Camarins">Camarins</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_WcAccessible" name="AvailableServices.WcAccessible" type="checkbox" value="true"><input name="AvailableServices.WcAccessible" type="hidden" value="false">
+                            <label for="Wc_acess_vel">Wc acessível</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_AccessibleParking" name="AvailableServices.AccessibleParking" type="checkbox" value="true"><input name="AvailableServices.AccessibleParking" type="hidden" value="false">
+                            <label for="Estacionamento_acess_vel">Estacionamento acessível</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input id="AvailableServices_InclusiveCommunication" name="AvailableServices.InclusiveCommunication" type="checkbox" value="true"><input name="AvailableServices.InclusiveCommunication" type="hidden" value="false">
+                            <label for="Comunica__o_inclusiva">Comunicação inclusiva</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox" id="other">
+                        <label>
+                            <input id="AvailableServices_Other" name="AvailableServices.Other" type="checkbox" value="true"><input name="AvailableServices.Other" type="hidden" value="false">
+                            <label for="Outros">Outros</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group" id="otherService" style="visibility: hidden;">
+                    <input class="form-control" id="AvailableServices_OtherServices" name="AvailableServices.OtherServices" placeholder="Especifique quais" type="text" value="">
+                </div>
+
+                <div class="hidden-print">
+                  <h4 class="slab text-center">Media</h4>
+                  <hr class="secondary-bg centered hidden-print">
+                  <div class="form-group">
+                      <div class="input-group">
+                          <span class="input-group-btn">
+                              <span class="btn btn-primary btn-file">
+                                  Procurar…
+                                  <input type="file" name="file" size="100" id="file" multiple="multiple">
+                              </span>
+                          </span>
+                          <input type="text" class="form-control">
+                      </div>
+                      <span class="help-block">
+                          Por favor, selecione um ou mais arquivos
+                      </span>
+
+                  </div>
+                </div>
+
+                <h4 class="slab text-center">Contacto do Proprietário</h4>
+                <hr class="secondary-bg centered hidden-print">
+
+                <div class="form-group">
+                    <input class="form-control" id="ResponsibleName" name="ResponsibleName" placeholder="Nome do responsável" type="text" value="">
+                    
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" cols="20" id="Adress" name="Adress" placeholder="Rua, nº" rows="2"></textarea>
+                    
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4 col-md-3">
+                            <input class="form-control" id="PostalCode1" name="PostalCode1" placeholder="Código Postal" type="text" value="">
+                            
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4 col-md-3">
+                            <input class="form-control" id="PostalCode2" name="PostalCode2" placeholder="Código Postal" type="text" value="">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="City" name="City" placeholder="Cidade" type="text" value="">
+                    
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="Telefone / Telemóvel" type="text" value="">
+                    
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="Email" name="Email" placeholder="Email" type="text" value="">
+                    
+                </div>
+
+                <div class="form-group">
+                    <label>Distrito</label>
+
+                    <select class="form-control" id="District" name="District"><option value="Aveiro">Aveiro</option>
+<option value="Beja">Beja</option>
+<option value="Braga">Braga</option>
+<option value="Braganca">Braganca</option>
+<option value="Castelo Branco">Castelo Branco</option>
+<option value="Coimbra">Coimbra</option>
+<option value="Evora">Evora</option>
+<option value="Faro">Faro</option>
+<option value="Guarda">Guarda</option>
+<option value="Leiria">Leiria</option>
+<option value="Lisboa">Lisboa</option>
+<option value="Portalegre">Portalegre</option>
+<option value="Porto">Porto</option>
+<option value="Santarem">Santarem</option>
+<option value="Setubal">Setubal</option>
+<option value="Viana Do Castelo">Viana Do Castelo</option>
+<option value="Vila Real">Vila Real</option>
+<option value="Viseu">Viseu</option>
+<option value="Açores (Ilha do Corvo)">Açores (Ilha do Corvo)</option>
+<option value="Açores (Ilha do Faial)">Açores (Ilha do Faial)</option>
+<option value="Açores (Ilha das Flores)">Açores (Ilha das Flores)</option>
+<option value="Açores (Ilha da Graciosa)">Açores (Ilha da Graciosa)</option>
+<option value="Açores (Ilha de Santa Maria)">Açores (Ilha de Santa Maria)</option>
+<option value="Açores (Ilha de São Jorge)">Açores (Ilha de São Jorge)</option>
+<option value="Açores (Ilha de São Miguel)">Açores (Ilha de São Miguel)</option>
+<option value="Açores (Ilha do Pico)">Açores (Ilha do Pico)</option>
+<option value="Açores (Ilha Terceira)">Açores (Ilha Terceira)</option>
+<option value="Madeira (Ilha da Madeira)">Madeira (Ilha da Madeira)</option>
+<option value="Madeira (Ilha de Porto Santo)">Madeira (Ilha de Porto Santo)</option>
+</select>
+                    
+                </div>
+
+
+
+                    <div class="form-group">
+                        <label for="Proprietor">É o proprietário do espaço?</label>
+                        <input id="Proprietor" name="Proprietor" type="checkbox" value="true"><input name="Proprietor" type="hidden" value="false">
+                    </div>
+                <div class="row hidden-print">
+                    <div class="col-xs-12 col-md-8 col-md-push-2">
+                        <p class="slab text-center">
+                            Para evitar a utilização de programas automáticos, pedimos-lhe que preencha a seguinte informação
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-push-2">
+                        <div class="g-recaptcha below-lv3 hidden-print" data-sitekey="6LeOjgkTAAAAAPffIy_wAm3eKI3zfJgZK80pWjgg"><div><div style="width: 304px; height: 78px;"><iframe src="./add_place_files/anchor.html" title="Widget recaptcha" width="304" height="78" role="presentation" frameborder="0" scrolling="no"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                    </div>
+                </div>
+
+                <div class="form-group hidden-print">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar</button>
+                </div>
+
+            </div>
+
+        </div>
+</form>    <hr class="clear">
+</div>
+
+<script type="text/javascript">
+    $('input[type="checkbox"]').on('change', function () {
+        var fatherId = $(this).parent().parent();
+        var id = fatherId[0].id;
+        if (fatherId.parent().parent()[0].id == "spaceType") {
+            $("#spaceType").find('input[type="checkbox"]').not(this).prop('checked', false);
+        } else {
+
+        }
+        if (id == "other") {
+            if ($('#other input[type="checkbox"]:checked').length == 0) {
+                $("#otherService").css('visibility', 'hidden')
+
+            } else {
+
+                $("#otherService").css('visibility', 'visible')
+            }
+        }
+    }
+    );
+
+    $(document).ready(function () {
+        if ($('#other input[type="checkbox"]:checked').length == 0) {
+            $("#otherService").css('visibility', 'hidden')
+
+        } else {
+
+            $("#otherService").css('visibility', 'visible')
+        }
+
+    });
+
+
+
+
+</script>
+<script src="./add_place_files/api.js"></script>
+
+</div>
+
+<div class="row visible-print-inline">
+  <div class="col-xs-12">
+    <img src="./add_place_files/logo-small.png" alt="Places4All" class="img-responsive">
+  </div>
+</div>
+
+<footer>
+    <div class="container hidden-print">
+        <div class="row">
+
+            <div class="col-xs-6 col-sm-2 col-lg-2">
+                <label class="bold">Places4All</label>
+                <ul class="list-unstyled">
+                    <li><a href="http://places4all.com/site/aboutus/">Quem somos</a></li>
+                    <li><a href="http://places4all.com/site/blog/">Blog</a></li>
+                    <li><a href="http://places4all.com/site/media/">Media</a></li>
+                    <li><a href="http://places4all.com/site/partners/">Parceiros</a></li>
+                    <li><a href="http://places4all.com/p4all/Contact/Comment">Contactos</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-6 col-sm-2 col-lg-2">
+                <label class="bold">Como funciona</label>
+                <ul class="list-unstyled">
+                    <li><a href="http://places4all.com/site/howitworks/#methodology">Metodologia</a></li>
+                    <li><a href="http://places4all.com/site/howitworks/#WhoCanJoin">Quem pode aderir</a></li>
+                    <li><a href="http://places4all.com/site/howitworks/#badge">O dístico</a></li>
+                    <li><a href="http://places4all.com/site/howitworks/#advantages">Vantagens</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-12 col-sm-5">
+                <form>
+                    <div class="form-group">
+                        <label class="bold">Subscreva a nossa newsletter</label>
+                        <input class="form-control dark" type="email" placeholder="Insira o seu email">
+                    </div>
+                    <button type="submit" class="btn btn-dimmed">Subscrever</button>
+                </form>
+                <ul class="list-inline social">
+                        <li><a href="https://www.facebook.com/placesforall" class="fa fa-facebook"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCpHn0NRhBpp6XwhNGpiC9-A" class="fa fa-youtube"></a></li>
+                        <li><a href="https://plus.google.com/u/2/115813301172670932974/posts" class="fa fa-google-plus"></a></li>
+                        <li><a href="https://www.linkedin.com/company/9291191?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A9291191%2Cidx%3A1-1-1%2CtarId%3A1441017666792%2Ctas%3Aplaces4all" class="fa fa-linkedin"></a></li>
+                    </ul>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 powered hidden-print">
+                <label class="bold block">Powered by</label>
+                <a href="http://www.immensa.org/">
+                <img src="./add_place_files/IMMENSA.png" class="show img-responsive" alt="Immensa" style="max-width:150px">
+            </a></div><a href="http://www.immensa.org/">
+
+        </a></div><a href="http://www.immensa.org/">
+
+        <div class="row">
+            <div class="col-xs-12 copyright">
+                © 2015 Places4All, todos os direitos reservados
+            </div>
+        </div>
+    </a></div><a href="http://www.immensa.org/">
+</a></footer><a href="http://www.immensa.org/">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- The main application script -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./add_place_files/jquery.min.js"></script>
+<script src="./add_place_files/jquery.datetimepicker.js"></script>
+<script src="./add_place_files/jquery.backstretch.min.js"></script>
+<script src="./add_place_files/bootstrap.min.js"></script>
+<script src="./add_place_files/jasny-bootstrap.min.js"></script>
+<script src="./add_place_files/animatescroll.min.js"></script>
+<script src="./add_place_files/jquery.dotdotdot.min.js"></script>
+
+
+<!-- UPLOAD -->
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="./add_place_files/jquery.ui.widget.js"></script>
+<!-- The Templates plugin is included to render the upload/download listings -->
+<script src="./add_place_files/tmpl.min.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="./add_place_files/load-image.all.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="./add_place_files/canvas-to-blob.min.js"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+
+<script src="./add_place_files/bootstrap.min(1).js"></script>
+<!-- blueimp Gallery script -->
+<script src="./add_place_files/jquery.blueimp-gallery.min.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="./add_place_files/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="./add_place_files/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="./add_place_files/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="./add_place_files/jquery.fileupload-image.js"></script>
+<!-- The File Upload audio preview plugin -->
+<script src="./add_place_files/jquery.fileupload-audio.js"></script>
+<!-- The File Upload video preview plugin -->
+<script src="./add_place_files/jquery.fileupload-video.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="./add_place_files/jquery.fileupload-validate.js"></script>
+<!-- The File Upload user interface plugin -->
+<script src="./add_place_files/jquery.fileupload-ui.js"></script>
+
+<!-- FIM UPLOAD -->
+
+<script src="./add_place_files/jquery.cookie.js"></script>
+<script src="./add_place_files/all.js"></script>
+
+
+<script src="./add_place_files/pfa.js"></script>
+<script src="./add_place_files/main.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $(".langSelector").click(function () {
+            $.cookie('p4alllang', 'en-US', { expires: new Date(2500, 1, 1), path: '/' });
+            return true;
+            $.ajax({
+                url: "/LanguageServerErrorsUtils/SetLanguage/en",
+                type: "POST",
+                dataType: 'text',
+                contentType: "application/json",
+                success: function (response) {
+                    location.reload();
+                }
+            });
+        });
+    });
+
+</script>
+
+</a><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div></body></html>
