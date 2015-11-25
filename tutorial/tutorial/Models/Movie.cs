@@ -22,5 +22,7 @@ namespace tutorial.Models
     public class MovieDBContext : DbContext
     {
         public DbSet<Movie> Movies { get; set; }
+
+        public System.Data.Entity.DbSet<tutorial.Models.Teste> Testes { get; set; }
     }
 }
