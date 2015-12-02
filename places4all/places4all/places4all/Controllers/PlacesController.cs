@@ -15,7 +15,7 @@ namespace places4all.Controllers
         private PlaceDBContext db = new PlaceDBContext();
 
         // GET: Places
-        public ActionResult Index()
+        public ActionResult Index() 
         {
             return View(db.Places.ToList());
         }
