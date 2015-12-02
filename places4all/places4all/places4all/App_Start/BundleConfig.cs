@@ -26,6 +26,24 @@ namespace places4all
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            /* HOMEPAGE BUNDLES */
+            bundles.Add(new StyleBundle("~/Content/Homepage/css").Include(
+                "~/Content/Homepage/places4all.css"));
+
+            bundles.Add(new ScriptBundle("~/Scritps/Homepage_header/js").Include(
+                "~/Scripts/Homepage/analytics.js"));
+
+            bundles.Add(new ScriptBundle("~/Scritps/Homepage_footer/js").Include(
+                "~/Scripts/Homepage/MyScript.js",
+                "~/Scripts/Homepage/jquery.cookie.js",
+                "~/Scripts/Homepage/pfa.js",
+                "~/Scripts/Homepage/jquery.backstretch.js",
+                "~/Scripts/Homepage/bootstrap.js",
+                "~/Scripts/Homepage/jasny-bootstrap.js",
+                "~/Scripts/Homepage/jquery.dotdotdot.js",
+                "~/Scripts/Homepage/jquery-2.1.3.js"));
+
         }
     }
 }

@@ -17,7 +17,7 @@ namespace places4all.Controllers
         // GET: Places
         public ActionResult Index() 
         {
-            return View(db.Places.ToList());
+            return View(/*db.Places.ToList()*/);
         }
 
         // GET: Places/Details/5
