@@ -2,7 +2,7 @@
 
 CREATE TABLE dbo.Users
 (
-    UserID int NOT NULL PRIMARY KEY,
+    UserID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	email VarChar(50) UNIQUE NOT NULL,
 	PassHash VarChar(50) NOT NULL,
 	Name VarChar(50) UNIQUE NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE dbo.Users
 
 Create table dbo.Places
 (
-	PlaceID int NOT NULL PRIMARY KEY,
+	PlaceID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	DesignacaoPT text,
 	DesignacaoEN text,
 	Endereco text,
@@ -37,13 +37,13 @@ Create table dbo.Places
 );
 
 Create table Blog(
-	BlogID int NOT NULL PRIMARY KEY,
+	BlogID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	BlogText text NOT NULL,
 	BlogImage VarCHAR(30)
 );
 
 Create table Media(
-	MediaID int NOT NULL PRIMARY KEY,
+	MediaID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	MediaLink VarChar(200) NOT NULL,
 	MediaDate datetime NOT NULL
 );
@@ -83,15 +83,21 @@ Create table Audit(
     ON UPDATE CASCADE
 );
 
-create table CheckList(
-	ChecklistID int NOT NULL primary key,
+create table Checklist(
+	AuditID int NOT NULL,
+	ChecklistID int NOT NULL IDENTITY(1,1) UNIQUE,
 	identifier VarChar(20) UNIQUE NOT NULL,
 	ChecklistDate datetime NOT NULL,
 	Active bit default 1
+	primary key (AuditID, ChecklistID)
+	FOREIGN KEY (AuditID)
+	REFERENCES Audit (AuditID) 
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
 );
 
 create table questions(
-	QuestionID int NOT NULL,
+	QuestionID int NOT NULL IDENTITY(1,1),
 	ChecklistID int NOT NULL,
 	QuestionText text NOT NULL,
 	Answer tinyint NOT NULL,
@@ -101,7 +107,7 @@ create table questions(
 	Active bit default 1
 	primary key (QuestionID,ChecklistID)
 	FOREIGN KEY (ChecklistID)
-	REFERENCES CheckList (ChecklistID) 
+	REFERENCES Checklist (ChecklistID) 
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
@@ -154,7 +160,7 @@ create table Rate(
 );
 
 create table images(
-	ImageID int NOT NULL,
+	ImageID int NOT NULL IDENTITY(1,1),
 	PlaceID int NOT NULL,
 	ImageName VarChar(200) NOT NULL
 	Primary key (ImageID,PlaceID)
@@ -164,15 +170,13 @@ create table images(
     ON UPDATE CASCADE
 );
 
-
-
 create table Incapacidade(
-	IncapacidadeID int NOT NULL PRIMARY KEY,
+	IncapacidadeID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	Designation varchar(50)
 );
 
 create table ReportProblem(
-	ReportID int NOT NULL,
+	ReportID int NOT NULL IDENTITY(1,1),
 	UserID int NOT NULL,
 	PlaceID int NOT NULL,
 	ProblemDescription text NOT NULL,
@@ -184,20 +188,6 @@ create table ReportProblem(
     ON UPDATE CASCADE,
 	FOREIGN KEY (PlaceID)
 	REFERENCES Places (PlaceID) 
-    ON DELETE CASCADE
-    ON UPDATE CASCADE
-);
-
-create table AuditChecklist(
-	AuditID int NOT NULL,
-	ChecklistID int NOT NULL
-	primary key (AuditID,ChecklistID)
-	FOREIGN KEY (AuditID)
-	REFERENCES Audit (AuditID) 
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-	FOREIGN KEY (ChecklistID)
-	REFERENCES CheckList (ChecklistID) 
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
