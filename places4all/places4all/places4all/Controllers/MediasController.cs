@@ -10,17 +10,17 @@ using places4all.Models;
 
 namespace places4all.Controllers
 {
-    public class MediaController : Controller
+    public class MediasController : Controller
     {
         private places4allDB db = new places4allDB();
 
-        // GET: Media
+        // GET: Medias
         public ActionResult Index()
         {
             return View(db.Medias.ToList());
         }
 
-        // GET: Media/Details/5
+        // GET: Medias/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,18 +35,18 @@ namespace places4all.Controllers
             return View(media);
         }
 
-        // GET: Media/Create
+        // GET: Medias/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Media/Create
+        // POST: Medias/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MediaId,MediaLink,Date")] Media media)
+        public ActionResult Create([Bind(Include = "MediaId,MediaLink,MediaDate")] Media media)
         {
             if (ModelState.IsValid)
             {
@@ -58,7 +58,7 @@ namespace places4all.Controllers
             return View(media);
         }
 
-        // GET: Media/Edit/5
+        // GET: Medias/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,12 +73,12 @@ namespace places4all.Controllers
             return View(media);
         }
 
-        // POST: Media/Edit/5
+        // POST: Medias/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MediaId,MediaLink,Date")] Media media)
+        public ActionResult Edit([Bind(Include = "MediaId,MediaLink,MediaDate")] Media media)
         {
             if (ModelState.IsValid)
             {
@@ -89,7 +89,7 @@ namespace places4all.Controllers
             return View(media);
         }
 
-        // GET: Media/Delete/5
+        // GET: Medias/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace places4all.Controllers
             return View(media);
         }
 
-        // POST: Media/Delete/5
+        // POST: Medias/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

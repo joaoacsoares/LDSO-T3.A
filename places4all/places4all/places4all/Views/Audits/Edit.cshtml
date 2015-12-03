@@ -18,6 +18,22 @@
         @Html.HiddenFor(model => model.AuditId)
 
         <div class="form-group">
+            @Html.LabelFor(model => model.PlaceId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PlaceId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PlaceId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.UserId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
             @Html.LabelFor(model => model.AuditDate, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.AuditDate, new { htmlAttributes = new { @class = "form-control" } })
@@ -74,18 +90,18 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.AuditInJustPT, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.AuditIntJustPT, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.AuditInJustPT, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.AuditInJustPT, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.AuditIntJustPT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AuditIntJustPT, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.AuditInJustEN, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.AuditIntJustEN, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.AuditInJustEN, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.AuditInJustEN, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.AuditIntJustEN, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AuditIntJustEN, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -174,14 +190,6 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.AuditTotal, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.AuditTotal, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Distico, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Distico, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Distico, "", new { @class = "text-danger" })
             </div>
         </div>
 

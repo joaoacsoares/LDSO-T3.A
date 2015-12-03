@@ -10,6 +10,6 @@ namespace places4all.Models
     {
         public int BlogId { get; set; }
         public string BlogText { get; set; }
-        public string Image { get; set; }
+        public string BlogImage { get; set; }
     }
 }

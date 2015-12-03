@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PlaceId,DesignacaoPT,DesignacaoEN,Endereco,DescricaoPT,DescricaoEN,Contacto,TipoEspaco,Latitude,Longitude,Distrito,Auditado,PlaceAdmin")] Place place)
+        public ActionResult Create([Bind(Include = "PlaceId,DesignacaoPT,DesignacaoEN,Endereco,DescricaoPT,DescricaoEN,Contacto,TipoEspaco,Latitude,Longitude,Direcao,Distrito,Auditado,PlaceAdmin")] Place place)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PlaceId,DesignacaoPT,DesignacaoEN,Endereco,DescricaoPT,DescricaoEN,Contacto,TipoEspaco,Latitude,Longitude,Distrito,Auditado,PlaceAdmin")] Place place)
+        public ActionResult Edit([Bind(Include = "PlaceId,DesignacaoPT,DesignacaoEN,Endereco,DescricaoPT,DescricaoEN,Contacto,TipoEspaco,Latitude,Longitude,Direcao,Distrito,Auditado,PlaceAdmin")] Place place)
         {
             if (ModelState.IsValid)
             {
