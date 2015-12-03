@@ -1,0 +1,153 @@
+﻿@model IEnumerable<places4all.Models.Audit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditWCJustPT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditWCJustEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditParkJustPT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditParkJustEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditGASJustPT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditGASJustEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditInJustPT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditInJustEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditOutJustPT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditOutJustEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditHallJustPT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditHallJustEN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditIntRoute)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditOutRoute)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditHallway)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditWC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditCarPark)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditGoodsServ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distico)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditWCJustPT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditWCJustEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditParkJustPT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditParkJustEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditGASJustPT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditGASJustEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditInJustPT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditInJustEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditOutJustPT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditOutJustEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditHallJustPT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditHallJustEN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditIntRoute)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditOutRoute)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditHallway)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditWC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditCarPark)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditGoodsServ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distico)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AuditId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AuditId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AuditId })
+        </td>
+    </tr>
+}
+
+</table>
