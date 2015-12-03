@@ -1,9 +1,8 @@
-﻿BEGIN TRANSACTION T1
-
+BEGIN TRANSACTION T1
 CREATE TABLE dbo.Users
 (
-    UserID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
-	email VarChar(50) UNIQUE NOT NULL,
+    UserId int NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	Email VarChar(50) UNIQUE NOT NULL,
 	PassHash VarChar(50) NOT NULL,
 	Name VarChar(50) UNIQUE NOT NULL,
 	Newsletter bit NOT NULL Default 0,
@@ -14,13 +13,12 @@ CREATE TABLE dbo.Users
 	AuthProvider VarChar(30),
 	ExternalID int Unique,
 	UserImage VarChar(100) NOT NULL,
-	isVisible bit NOT NULL default 1,
+	IsVisible bit NOT NULL default 1,
 	Auditor bit NOT NULL default 0
 );
-
 Create table dbo.Places
 (
-	PlaceID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	PlaceId int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	DesignacaoPT text,
 	DesignacaoEN text,
 	Endereco text,
@@ -29,29 +27,26 @@ Create table dbo.Places
 	Contacto Varchar(9),
 	TipoEspaco int,
 	Latitude decimal,
-	longitude decimal,
-	direcao decimal,
+	Longitude decimal,
+	Direcao decimal,
 	Distrito VarChar(30),
 	Auditado bit default 0,
 	PlaceAdmin VarChar(30)
 );
-
-Create table Blog(
-	BlogID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
+Create table dbo.Blogs(
+	BlogId int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	BlogText text NOT NULL,
 	BlogImage VarCHAR(30)
 );
-
-Create table Media(
-	MediaID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
+Create table dbo.Medias(
+	MediaId int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	MediaLink VarChar(200) NOT NULL,
 	MediaDate datetime NOT NULL
 );
-
-Create table Audit(
-	AuditID int UNIQUE NOT NULL,
-	PlaceID int NOT NULL,
-	UserID int NOT NULL,
+Create table dbo.Audits(
+	AuditId int UNIQUE NOT NULL,
+	PlaceId int NOT NULL,
+	UserId int NOT NULL,
 	AuditDate datetime NOT NULL,
 	AuditWCJustPT text NOT NULL,
 	AuditWCJustEN text NOT NULL,
@@ -82,40 +77,37 @@ Create table Audit(
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
-create table Checklist(
-	AuditID int NOT NULL,
-	ChecklistID int NOT NULL IDENTITY(1,1) UNIQUE,
-	identifier VarChar(20) UNIQUE NOT NULL,
+create table dbo.Checklists(
+	AuditId int NOT NULL,
+	ChecklistId int NOT NULL IDENTITY(1,1) UNIQUE,
+	Identifier VarChar(20) UNIQUE NOT NULL,
 	ChecklistDate datetime NOT NULL,
 	Active bit default 1
 	primary key (AuditID, ChecklistID)
 	FOREIGN KEY (AuditID)
-	REFERENCES Audit (AuditID) 
+	REFERENCES Audits (AuditID) 
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
-create table questions(
-	QuestionID int NOT NULL IDENTITY(1,1),
-	ChecklistID int NOT NULL,
+create table dbo.Questions(
+	QuestionId int NOT NULL IDENTITY(1,1),
+	ChecklistId int NOT NULL,
 	QuestionText text NOT NULL,
 	Answer tinyint NOT NULL,
 	Suggestion text,
-	Questionweight decimal NOT NULL,
+	QuestionWeight decimal NOT NULL,
 	QuestionType decimal NOT NULL,
 	Active bit default 1
 	primary key (QuestionID,ChecklistID)
 	FOREIGN KEY (ChecklistID)
-	REFERENCES Checklist (ChecklistID) 
+	REFERENCES Checklists (ChecklistID) 
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
-create table comment(
-	UserID int NOT NULL,
-	PlaceID int NOT NULL,
-	CommentID int NOT NULL,
+create table dbo.Comments(
+	UserId int NOT NULL,
+	PlaceId int NOT NULL,
+	CommentId int NOT NULL,
 	Content text NOT NULL,
 	Date datetime NOT NULL
 	Primary key (UserID,PlaceID,CommentID),
@@ -128,10 +120,9 @@ create table comment(
     ON DELETE CASCADE
     ON UPDATE CASCADE
 )
-
-create table FavPlaces(
-	UserID int NOT NULL,
-	PlaceID int NOT NULL
+create table dbo.FavPlaces(
+	UserId int NOT NULL,
+	PlaceId int NOT NULL
 	Primary Key (UserID,PlaceID)
 	FOREIGN KEY (UserID)
 	REFERENCES Users (UserID) 
@@ -142,10 +133,9 @@ create table FavPlaces(
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
-create table Rate(
-	UserID int NOT NULL,
-	PlaceID int NOT NULL,
+create table dbo.Rates(
+	UserId int NOT NULL,
+	PlaceId int NOT NULL,
 	RateID int NOT NULL,
 	Grade tinyint NOT NULL
 	Primary Key (UserID,PlaceID,RateID)
@@ -158,10 +148,9 @@ create table Rate(
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
-create table images(
-	ImageID int NOT NULL IDENTITY(1,1),
-	PlaceID int NOT NULL,
+create table dbo.Images(
+	ImageId int NOT NULL IDENTITY(1,1),
+	PlaceId int NOT NULL,
 	ImageName VarChar(200) NOT NULL
 	Primary key (ImageID,PlaceID)
 	FOREIGN KEY (PlaceID)
@@ -169,19 +158,17 @@ create table images(
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
-create table Incapacidade(
-	IncapacidadeID int NOT NULL IDENTITY(1,1) PRIMARY KEY,
+create table dbo.Incapacidades(
+	IncapacidadeId int NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	Designation varchar(50)
 );
-
-create table ReportProblem(
-	ReportID int NOT NULL IDENTITY(1,1),
-	UserID int NOT NULL,
+create table dbo.ReportProblems(
+	ReportProblemId int NOT NULL IDENTITY(1,1),
+	UserId int NOT NULL,
 	PlaceID int NOT NULL,
 	ProblemDescription text NOT NULL,
 	ProblemPhoto VarChar(200)
-	primary key(ReportID,UserID,PlaceID)
+	primary key(ReportProblemId,UserID,PlaceID)
 	FOREIGN KEY (UserID)
 	REFERENCES Users (UserID) 
     ON DELETE CASCADE
@@ -191,7 +178,6 @@ create table ReportProblem(
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
 create table UserIncapacidade(
 	UserID int NOT NULL,
 	IncapacidadeID int NOT NULL
@@ -201,9 +187,8 @@ create table UserIncapacidade(
     ON DELETE CASCADE
     ON UPDATE CASCADE,
 	FOREIGN KEY (IncapacidadeID)
-	REFERENCES Incapacidade (IncapacidadeID) 
+	REFERENCES Incapacidades (IncapacidadeID) 
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
 COMMIT TRANSACTION T1
