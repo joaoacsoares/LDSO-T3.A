@@ -10,8 +10,4 @@ namespace places4all.Models
     {
         public int FavPlaceId { get; set; }
     }
-    public class FavPlaceDBContext : DbContext
-    {
-        public DbSet<FavPlace> FavPlaces { get; set; }
-    }
 }

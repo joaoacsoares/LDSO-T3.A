@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class CommentsController : Controller
     {
-        private CommentDBContext db = new CommentDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: Comments
         public ActionResult Index()
@@ -38,7 +38,7 @@ namespace places4all.Controllers
         // GET: Comments/Create
         public ActionResult Create()
         {
-            return View();
+            return View(); 
         }
 
         // POST: Comments/Create

@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class ChecklistsController : Controller
     {
-        private ChecklistDBContext db = new ChecklistDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: Checklists
         public ActionResult Index()

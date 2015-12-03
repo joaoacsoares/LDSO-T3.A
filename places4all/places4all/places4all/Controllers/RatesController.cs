@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class RatesController : Controller
     {
-        private RateDBContext db = new RateDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: Rates
         public ActionResult Index()

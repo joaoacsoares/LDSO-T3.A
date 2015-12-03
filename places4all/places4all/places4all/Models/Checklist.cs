@@ -13,8 +13,4 @@ namespace places4all.Models
         public DateTime Date { get; set; }
         public bool Active { get; set; }
     }
-    public class ChecklistDBContext : DbContext
-    {
-        public DbSet<Checklist> Checklists { get; set; }
-    }
 }

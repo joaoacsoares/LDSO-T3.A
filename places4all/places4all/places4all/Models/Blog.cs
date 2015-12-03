@@ -12,8 +12,4 @@ namespace places4all.Models
         public string BlogText { get; set; }
         public string Image { get; set; }
     }
-    public class BlogDBContext : DbContext
-    {
-        public DbSet<Blog> Blogs { get; set; }
-    }
 }

@@ -12,8 +12,4 @@ namespace places4all.Models
         public string ProblemDescription { get; set; }
         public string ProblemPhoto { get; set; }
     }
-    public class ReportProblemDBContext : DbContext
-    {
-        public DbSet<ReportProblem> ReportProblems { get; set; }
-    }
 }

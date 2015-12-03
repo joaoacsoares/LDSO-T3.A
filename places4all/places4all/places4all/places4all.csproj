@@ -198,6 +198,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Media.cs" />
     <Compile Include="Models\Place.cs" />
+    <Compile Include="Models\places4allDB.cs" />
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\Rate.cs" />
     <Compile Include="Models\ReportProblem.cs" />

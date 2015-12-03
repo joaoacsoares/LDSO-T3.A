@@ -23,8 +23,4 @@ namespace places4all.Models
         public bool IsVisible { get; set; }
         public bool Auditor { get; set; }
     }
-    public class UserDBContext : DbContext
-    {
-        public DbSet<User> Users { get; set; }
-    }
 }

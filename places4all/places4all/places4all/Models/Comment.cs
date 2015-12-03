@@ -12,8 +12,4 @@ namespace places4all.Models
         public string Content { get; set; }
         public DateTime Date { get; set; }
     }
-    public class CommentDBContext : DbContext
-    {
-        public DbSet<Comment> Comments { get; set; }
-    }
 }

@@ -16,8 +16,4 @@ namespace places4all.Models
         public decimal Type { get; set; }
         public bool Active { get; set; }
     }
-    public class QuestionDBContext : DbContext
-    {
-        public DbSet<Question> Questions { get; set; }
-    }
 }
