@@ -35,14 +35,14 @@ namespace places4all
                 "~/Scripts/Homepage/analytics.js"));
 
             bundles.Add(new ScriptBundle("~/Scritps/Homepage_footer/js").Include(
-                "~/Scripts/Homepage/MyScript.js",
-                "~/Scripts/Homepage/jquery.cookie.js",
-                "~/Scripts/Homepage/pfa.js",
+                "~/Scripts/Homepage/jquery-2.1.3.js",
                 "~/Scripts/Homepage/jquery.backstretch.js",
                 "~/Scripts/Homepage/bootstrap.js",
                 "~/Scripts/Homepage/jasny-bootstrap.js",
+                "~/Scripts/Homepage/pfa.js",
                 "~/Scripts/Homepage/jquery.dotdotdot.js",
-                "~/Scripts/Homepage/jquery-2.1.3.js"));
+                "~/Scripts/Homepage/jquery.cookie.js",
+                "~/Scripts/Homepage/MyScript.js"));
 
         }
     }

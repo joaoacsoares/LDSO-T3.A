@@ -6,8 +6,8 @@ $(document).on('change', '.btn-file :file', function() {
 });
 
 $(document).ready(function() {
-    $("#header").backstretch("Content/images/header.jpg");
-    $("#video").backstretch("Content/images/video.jpg");
+    $("#header").backstretch("Content/Images/header.jpg");
+    $("#video").backstretch("Content/Images/video.jpg");
 
 	$(".wrapper p").dotdotdot();
 
