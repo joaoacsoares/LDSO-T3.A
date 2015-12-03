@@ -14,6 +14,8 @@ namespace tutorial.Models
     public class places4all : DbContext
     {
         public System.Data.Entity.DbSet<tutorial.Models.Teste> Testes { get; set; }
+
+        public System.Data.Entity.DbSet<tutorial.Models.Place> Places { get; set; }
     }
 
 }
