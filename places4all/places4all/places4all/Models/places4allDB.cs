@@ -8,7 +8,7 @@ namespace places4all.Models
 {
     public class places4allDB : DbContext
     {
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; } 
         public DbSet<ReportProblem> ReportProblems { get; set; }
         public DbSet<Rate> Rates { get; set; }
         public DbSet<Question> Questions { get; set; }

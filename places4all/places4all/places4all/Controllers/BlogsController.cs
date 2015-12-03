@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
-using System.Web.Mvc; 
+using System.Web.Mvc;
 using places4all.Models;
 
 namespace places4all.Controllers
@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "BlogId,BlogText,Image")] Blog blog)
+        public ActionResult Create([Bind(Include = "BlogId,BlogText,BlogImage")] Blog blog)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "BlogId,BlogText,Image")] Blog blog)
+        public ActionResult Edit([Bind(Include = "BlogId,BlogText,BlogImage")] Blog blog)
         {
             if (ModelState.IsValid)
             {

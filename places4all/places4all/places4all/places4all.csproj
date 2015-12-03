@@ -177,7 +177,7 @@
     <Compile Include="Controllers\ImagesController.cs" />
     <Compile Include="Controllers\IncapacidadesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MediaController.cs" />
+    <Compile Include="Controllers\MediasController.cs" />
     <Compile Include="Controllers\PlacesController.cs" />
     <Compile Include="Controllers\QuestionsController.cs" />
     <Compile Include="Controllers\RatesController.cs" />
@@ -374,6 +374,11 @@
     <Content Include="Views\ReportProblems\Details.cshtml" />
     <Content Include="Views\ReportProblems\Edit.cshtml" />
     <Content Include="Views\ReportProblems\Index.cshtml" />
+    <Content Include="Views\Medias\Create.cshtml" />
+    <Content Include="Views\Medias\Delete.cshtml" />
+    <Content Include="Views\Medias\Details.cshtml" />
+    <Content Include="Views\Medias\Edit.cshtml" />
+    <Content Include="Views\Medias\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

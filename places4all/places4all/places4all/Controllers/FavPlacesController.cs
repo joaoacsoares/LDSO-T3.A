@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "FavPlaceId")] FavPlace favPlace)
+        public ActionResult Create([Bind(Include = "FavPlaceId,UserId,PlaceId")] FavPlace favPlace)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "FavPlaceId")] FavPlace favPlace)
+        public ActionResult Edit([Bind(Include = "FavPlaceId,UserId,PlaceId")] FavPlace favPlace)
         {
             if (ModelState.IsValid)
             {

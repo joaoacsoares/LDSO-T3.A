@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "QuestionId,QuestionText,Answer,Suggestion,Weight,Type,Active")] Question question)
+        public ActionResult Create([Bind(Include = "QuestionId,ChecklistId,QuestionText,Answer,Suggestion,QuestionWeight,QuestionType,Active")] Question question)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "QuestionId,QuestionText,Answer,Suggestion,Weight,Type,Active")] Question question)
+        public ActionResult Edit([Bind(Include = "QuestionId,ChecklistId,QuestionText,Answer,Suggestion,QuestionWeight,QuestionType,Active")] Question question)
         {
             if (ModelState.IsValid)
             {

@@ -12,7 +12,10 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.PlaceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageName)
         </th>
         <th></th>
     </tr>
@@ -20,7 +23,10 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Name)
+            @Html.DisplayFor(modelItem => item.PlaceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageName)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ImageId }) |

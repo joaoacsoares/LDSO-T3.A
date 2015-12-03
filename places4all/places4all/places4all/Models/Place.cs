@@ -18,6 +18,7 @@ namespace places4all.Models
         public int TipoEspaco { get; set; }
         public decimal Latitude { get; set; }
         public decimal Longitude { get; set; }
+        public decimal Direcao { get; set; }
         public string Distrito { get; set; }
         public bool Auditado { get; set; }
         public string PlaceAdmin { get; set; }
