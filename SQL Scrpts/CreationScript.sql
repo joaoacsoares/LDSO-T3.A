@@ -121,15 +121,16 @@ create table dbo.Comments(
     ON UPDATE CASCADE
 )
 create table dbo.FavPlaces(
+	FavPlaceid int NOT NULL IDENTITY (1,1),
 	UserId int NOT NULL,
 	PlaceId int NOT NULL
-	Primary Key (UserID,PlaceID)
+	Primary Key (FavPlaceid,UserID,PlaceID)
 	FOREIGN KEY (UserID)
 	REFERENCES Users (UserID) 
     ON DELETE CASCADE
     ON UPDATE CASCADE,
-	FOREIGN KEY (PlaceID)
-	REFERENCES Places (PlaceID) 
+	FOREIGN KEY (PlaceId)
+	REFERENCES Places (PlaceId) 
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
