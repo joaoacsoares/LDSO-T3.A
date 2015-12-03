@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class ReportProblemsController : Controller
     {
-        private ReportProblemDBContext db = new ReportProblemDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: ReportProblems
         public ActionResult Index()

@@ -5,14 +5,14 @@ using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
-using System.Web.Mvc;
+using System.Web.Mvc; 
 using places4all.Models;
 
 namespace places4all.Controllers
 {
     public class BlogsController : Controller
     {
-        private BlogDBContext db = new BlogDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: Blogs
         public ActionResult Index()

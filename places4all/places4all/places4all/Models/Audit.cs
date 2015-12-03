@@ -31,9 +31,4 @@ namespace places4all.Models
         public decimal AuditTotal { get; set; }
         public string Distico { get; set; }
     }
-
-    public class AuditDBContext : DbContext
-    {
-        public DbSet<Audit> Audits { get; set; }
-    }
 }

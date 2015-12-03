@@ -12,12 +12,12 @@ namespace places4all.Controllers
 {
     public class PlacesController : Controller
     {
-        private PlaceDBContext db = new PlaceDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: Places
-        public ActionResult Index() 
+        public ActionResult Index()
         {
-            return View(/*db.Places.ToList()*/);
+            return View(db.Places.ToList());
         }
 
         // GET: Places/Details/5

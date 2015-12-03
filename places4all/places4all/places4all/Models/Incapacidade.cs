@@ -11,8 +11,4 @@ namespace places4all.Models
         public int Id { get; set; }
         public string Designation { get; set; }
     }
-    public class IncapacidadeDBContext : DbContext
-    {
-        public DbSet<Incapacidade> Incapacidades { get; set; }
-    }
 }

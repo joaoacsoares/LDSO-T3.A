@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class IncapacidadesController : Controller
     {
-        private IncapacidadeDBContext db = new IncapacidadeDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: Incapacidades
         public ActionResult Index()

@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class MediaController : Controller
     {
-        private MediaDBContext db = new MediaDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: Media
         public ActionResult Index()

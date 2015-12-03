@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class UsersController : Controller
     {
-        private UserDBContext db = new UserDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: Users
         public ActionResult Index()

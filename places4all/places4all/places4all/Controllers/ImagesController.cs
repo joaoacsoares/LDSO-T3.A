@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class ImagesController : Controller
     {
-        private ImageDBContext db = new ImageDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: Images
         public ActionResult Index()

@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class FavPlacesController : Controller
     {
-        private FavPlaceDBContext db = new FavPlaceDBContext();
+        private places4allDB db = new places4allDB();
 
         // GET: FavPlaces
         public ActionResult Index()
