@@ -1,0 +1,348 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    @Styles.Render("~/Content/HowItWorks/css")
+    @Scripts.Render("~/Scritps/HowItWorks/js")
+</head>
+<script>
+    $(document).ready(function () {
+        $(".langSelector").click(function () {
+            $.cookie('p4alllang', 'pt-PT', { expires: new Date(2500, 1, 1), path: '/' });
+            return true;
+            $.ajax({
+                url: "/LanguageServerErrorsUtils/SetLanguage/pt",
+                type: "POST",
+                dataType: 'text',
+                contentType: "application/json",
+                success: function (response) {
+                    location.reload();
+                }
+            });
+        });
+    });
+
+</script>
+<body>
+    <div class="container-fluid header">
+
+        <!-- Navigation -->
+        <div class="row visible-xs">
+
+            <div class="col-xs-12">
+                <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="http://places4all.com/p4all/Auth/Logout?returnUrl=%2Fsite%2Fhowitworks%2F">Logout</a></li>
+                        <li><a href="http://places4all.com/p4all/Auth/UserPage/110025">Welcome, Diogo Barroso</a></li>
+
+                        <li class=""><a href="./how_it_works_files/how_it_works.html" class="langSelector">Português</a></li>
+                        <li><a href="http://places4all.com/p4all/AdhereNetwork/AdhereNetwork" class="btn btn-primary">Add place</a></li>
+                    </ul>
+                </nav>
+
+                <div class="navbar navbar-default navbar-fixed-top clearfix">
+                    <div class="logo pull-left show-xs">
+                        <a href="http://places4all.com/">
+                            <img src="./how_it_works_files/logo-small.png" alt="Places4All" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="pull-right">
+                        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden-xs">
+
+            <div class="logo small col-sm-2 col-lg-1">
+                <a href="http://places4all.com/">
+                    <img src="./how_it_works_files/logo-small.png" alt="Places4All" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-sm-10 col-lg-11">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- <a class="navbar-brand" href="index.php">Places4All</a> -->
+                        </div>
+                        <form action="http://places4all.com/p4all/search" method="get">
+                            <div class="navbar-form navbar-left hidden-sm" role="search">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                    </span>
+                                    <input type="text" class="form-control" id="search" name="q" placeholder="What are you looking for?" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+
+
+                                <li><a href="http://places4all.com/p4all/Auth/Logout?returnUrl=%2Fsite%2Fhowitworks%2F">Logout</a></li>
+                                <li><a href="http://places4all.com/p4all/Auth/UserPage/110025">Welcome, Diogo Barroso</a></li>
+
+
+
+
+                                <li class=""><a href="./how_it_works_files/how_it_works.html" class="langSelector">Português</a></li>
+                                <li>
+                                    <form class="navbar-form">
+                                        <a href="http://places4all.com/p4all/AdhereNetwork/AdhereNetwork" class="btn btn-primary">Add place</a>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="main">
+
+
+        <div class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>How it works</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="nav-secondary">
+            <div class="container">
+                <div class="row">
+                <div class="col-xs-12">
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="active"><a href="#">How it works</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-3 hidden-sm hidden-xs">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a onclick="$(&#39;#methodology&#39;).animatescroll();">Metholody</a></li>
+                        <li role="presentation"><a onclick="$(&#39;#WhoCanJoin&#39;).animatescroll();">Who can join</a></li>
+                        <li role="presentation"><a onclick="$(&#39;#badge&#39;).animatescroll();">The badge</a></li>
+                        <li role="presentation"><a onclick="$(&#39;#advantages&#39;).animatescroll();">Advantages</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9">
+                    <div class="row">
+                        <div class="col-xs-12" id="methodology">
+                            <h2>Methodology</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 text-center">
+                            <img src="./how_it_works_files/avaliacao.png" alt="avaliacaopng-2" class="img-responsive center-block">
+
+                            <h3>Evaluation</h3>
+                            <p></p><p>Fast and detailed diagnosis of accessibility conditions in the place, with and automatic report with suggestions for improvement.</p><p>
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 text-center">
+                            <img src="./how_it_works_files/rating.png" alt="ratingpng-1" class="img-responsive center-block">
+
+                            <h3>Classification</h3>
+                            <p>There will be a global rating in percentage form</p><p>
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 text-center">
+                            <img src="./how_it_works_files/info.png" alt="infopng-1" class="img-responsive center-block">
+
+                            <h3>Information</h3>
+                            <p></p><p>Couplet assignment recognition and detailed disclosure of accessibility conditions ( on-site and online ) , allowing the provision of immediate information on the accessibility conditions , making the space a handy reference in the city, facilitating users in their decision.</p><p>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12" id="WhoCanJoin">
+                            <h2>Who can join</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 text-center">
+
+                            <i class="fa fa-bed icon icon-lg icon-round blue"></i>
+                            <h4>Accommodation</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 text-center">
+
+                            <i class="fa fa-shopping-cart icon icon-lg icon-round yellow"></i>
+                            <h4>Shopping</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 text-center">
+                            <i class="fa fa-glass icon icon-lg icon-round dark-blue"></i>
+                            <h4>Culture &amp; Leisure</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 text-center">
+                            <i class="fa fa-graduation-cap icon icon-lg icon-round red"></i>
+                            <h4>Education</h4>
+                        </div>
+                    </div>
+                    <hr class="clear">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 text-center">
+                            <i class="fa fa-calendar icon icon-lg icon-round brown"></i>
+                            <h4>Events</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 text-center">
+                            <i class="fa fa-cutlery icon icon-lg icon-round green"></i>
+                            <h4>Restoration</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 text-center">
+                            <i class="fa fa-medkit icon icon-lg icon-round light-blue"></i>
+                            <h4>Health</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 text-center">
+                            <i class="fa fa-gears icon icon-lg icon-round orange"></i>
+                            <h4>Services</h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-12" id="badge">
+                            <h2>The badge</h2>
+                            <img src="./how_it_works_files/distico-01.png" alt="O dístico" class="img-responsive center-block">
+                            <hr class="clear">
+                            <p>The badge allows to recognise the place as a reference in accessibility and provide immediate information on the accessibility conditions of space or event and can be used in various situations (eg outside the door, in the city's tourism platform , accessible tourism platforms , event posters, social networks, etc ... ) .</p><p>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12" id="advantages">
+                            <hr>
+                            <h2>Advantages</h2>
+                            <ul>
+                                <li>Be recognized as a reference place in accessibility</li>
+                                <li>Provide information on own website, social networks, municipalities , associations, partners and tour guides .</li>
+                                <li>Detailed evaluation with suggestions for improvement about accessibility conditions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-sm-push-3 col-md-4 col-md-push-4 text-center">
+                            <button href="#" class="btn btn-primary btn-lg btn-block">Add place</button>
+                        </div>
+                    </div>
+                    <hr class="clear">
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <a href="http://places4all.com/site/howitworks/#" onclick="$(&#39;body&#39;).animatescroll();" class="btn btn-default pull-right"><i class="fa fa-angle-up"></i> Back to top</a>
+                            <hr class="clear">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row visible-print-inline">
+        <div class="col-xs-12">
+            <img src="./how_it_works_files/logo-small.png" alt="Places4All" class="img-responsive">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container hidden-print">
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-2 col-lg-2">
+                    <label class="bold">Places4All</label>
+                    <ul class="list-unstyled">
+                        <li><a href="http://places4all.com/site/aboutus/">About us</a></li>
+                        <li><a href="http://places4all.com/site/blog/">Blog</a></li>
+                        <li><a href="http://places4all.com/site/media/">Media</a></li>
+                        <li><a href="http://places4all.com/site/partners/">Partners</a></li>
+                        <li><a href="http://places4all.com/p4all/Contact/Comment">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-sm-2 col-lg-2">
+                    <label class="bold">How it works</label>
+                    <ul class="list-unstyled">
+                        <li><a href="http://places4all.com/site/howitworks/#methodology">Methodology</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/#WhoCanJoin">Who can join</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/#badge">The badge</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/#advantages">Advantages</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-5">
+                    <form>
+                        <div class="form-group">
+                            <label class="bold">Subscribe to our newsletter</label>
+                            <input class="form-control dark" type="email" placeholder="Insert your email">
+                        </div>
+                        <button type="submit" class="btn btn-dimmed">Subscribe</button>
+                    </form>
+                    <ul class="list-inline social">
+                        <li><a href="https://www.facebook.com/placesforall" class="fa fa-facebook"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCpHn0NRhBpp6XwhNGpiC9-A" class="fa fa-youtube"></a></li>
+                        <li><a href="https://plus.google.com/u/2/115813301172670932974/posts" class="fa fa-google-plus"></a></li>
+                        <li><a href="https://www.linkedin.com/company/9291191?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A9291191%2Cidx%3A1-1-1%2CtarId%3A1441017666792%2Ctas%3Aplaces4all" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 powered hidden-print">
+                    <label class="bold block">Powered by</label>
+                    <a href="http://www.immensa.org/">
+                        <img src="./how_it_works_files/IMMENSA.png" class="show img-responsive" alt="Immensa" style="max-width:150px">
+                    </a>
+                </div><a href="http://www.immensa.org/">
+
+                </a>
+            </div><a href="http://www.immensa.org/">
+
+                <div class="row">
+                    <div class="col-xs-12 copyright">
+                        © 2015 Places4All, all rights reserved
+                    </div>
+                </div>
+            </a>
+        </div><a href="http://www.immensa.org/">
+        </a>
+    </footer><a href="http://www.immensa.org/"></a><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+</body>
+
