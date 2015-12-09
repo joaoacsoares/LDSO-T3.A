@@ -44,6 +44,44 @@ namespace places4all
                 "~/Scripts/Homepage/jquery.cookie.js",
                 "~/Scripts/Homepage/MyScript.js"));
 
+            /* LOGIN BUNDLES */
+            bundles.Add(new StyleBundle("~/Content/Login/css").Include(
+                "~/Content/Login/jquey.datetimepicker.css",
+                "~/Content/Login/Login.css",
+                "~/Content/Login/places4ll.css"));
+
+            bundles.Add(new StyleBundle("~/Scripts/Login/js").Include(
+                "~/Scripts/Login/3QFZqSHayzH.js",
+                "~/Scripts/Login/all.js",
+                "~/Scripts/Login/analytics.js",
+                "~/Scripts/Login/animatescrolljs",
+                "~/Scripts/Login/bootstrap(1).js",
+                "~/Scripts/Login/bootstrap.js",
+                "~/Scripts/Login/canvas-to-blob.js",
+                "~/Scripts/Login/jasny-bootstrap.js",
+                "~/Scripts/Login/jquery-2.1.3.js",
+                "~/Scripts/Login/jquery.blueimp-gallery.js",
+                "~/Scripts/Login/jquery.cookie.js",
+                "~/Scripts/Login/jquery.datetimepicker.js",
+                "~/Scripts/Login/jquery.dotdotdot.js",
+                "~/Scripts/Login/jquery.fileupload-audio.js",
+                "~/Scripts/Login/jquery.fileupload-image.js",
+                "~/Scripts/Login/jquery.fileupload-process.js",
+                "~/Scripts/Login/jquery.fileupload-ui.js",
+                "~/Scripts/Login/jquery.fileupload-validate.js",
+                "~/Scripts/Login/jquery.fileupload-video.js",
+                "~/Scripts/Login/jquery.fileupload.js",
+                "~/Scripts/Login/jquery.iframe-transport.js",
+                "~/Scripts/Login/jquery.js",
+                "~/Scripts/Login/jquery.ui.widget.js",
+                "~/Scripts/Login/load-image.all.js",
+                "~/Scripts/Login/main.js",
+                "~/Scripts/Login/pfa.js",
+                "~/Scripts/Login/sdk.js",
+                "~/Scripts/Login/tmpl.js"));
+
         }
+
     }
-}
+    }
+
