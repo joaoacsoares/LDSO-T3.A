@@ -87,7 +87,7 @@ namespace places4all
                 "~/Content/PlacesPage/place.css",
                 "~/Content/PlacesPage/places4all.css"));
 
-            bundles.Add(new ScriptBundle("~/Script/PlacesPage/js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/PlacesPage/js").Include(
                 "~/Scripts/PlacesPage/all.js",
                 "~/Scripts/PlacesPage/analytics.js",
                 "~/Scripts/PlacesPage/bootstrap.js",
@@ -130,7 +130,7 @@ namespace places4all
                 "~/Content/ListPlaces/jquery.datetimepicker.css",
                 "~/Content/ListPlaces/places4all.css"));
 
-            bundles.Add(new ScriptBundle("~/Script/ListPlaces/js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/ListPlaces/js").Include(
                 "~/Scripts/ListPlaces/analytics.js",
                  "~/Scripts/ListPlaces/jquery-2.1.3.js",
                  "~/Scripts/ListPlaces/jquery.js",
@@ -166,7 +166,7 @@ namespace places4all
                 "~/Content/AboutUs/jquery.datetimepicker.css",
                 "~/Content/AboutUs/places4all.css"));
 
-            bundles.Add(new ScriptBundle("~/Script/AboutUs/js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/AboutUs/js").Include(
                 "~/Scripts/AboutUs/analytics.js",
                  "~/Scripts/AboutUs/jquery-2.1.3.js",
                  "~/Scripts/AboutUs/jquery.js",
@@ -203,7 +203,7 @@ namespace places4all
                 "~/Content/AddPlace/jquery.datetimepicker.css"));
                 
 
-            bundles.Add(new ScriptBundle("~/Script/AddPlace/js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/AddPlace/js").Include(
                 "~/Scripts/AddPlace/analytics.js",
                 "~/Scripts/AddPlace/recaptcha__pt_pt.js",
                  "~/Scripts/AddPlace/jquery-2.1.3.js",
@@ -241,7 +241,7 @@ namespace places4all
                 "~/Content/HowItWorks/jquery.datetimepicker.css"));
 
 
-            bundles.Add(new ScriptBundle("~/Script/HowItWorks/js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/HowItWorks/js").Include(
                 "~/Scripts/HowItWorks/analytics.js",
                  "~/Scripts/HowItWorks/jquery-2.1.3.js",
                  "~/Scripts/HowItWorks/jquery.js",
@@ -278,7 +278,7 @@ namespace places4all
                 "~/Content/MyProfile/jquery.datetimepicker.css"));
 
 
-            bundles.Add(new ScriptBundle("~/Script/MyProfile/js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/MyProfile/js").Include(
                 "~/Scripts/MyProfile/analytics.js",
                  "~/Scripts/MyProfile/jquery-2.1.3.js",
                  "~/Scripts/MyProfile/jquery-1.11.0.js",
@@ -316,7 +316,7 @@ namespace places4all
                 "~/Content/Register/jquery.datetimepicker.css"));
 
 
-            bundles.Add(new ScriptBundle("~/Script/Register/js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/Register/js").Include(
                  "~/Scripts/Register/analytics.js",
                  "~/Scripts/Register/sdk.js",
                  "~/Scripts/Register/jquery-2.1.3.js",
