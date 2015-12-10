@@ -12,9 +12,6 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ChecklistId)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.QuestionText)
         </th>
         <th>
@@ -24,10 +21,10 @@
             @Html.DisplayNameFor(model => model.Suggestion)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.QuestionWeight)
+            @Html.DisplayNameFor(model => model.Weight)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.QuestionType)
+            @Html.DisplayNameFor(model => model.Type)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Active)
@@ -38,9 +35,6 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ChecklistId)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.QuestionText)
         </td>
         <td>
@@ -50,10 +44,10 @@
             @Html.DisplayFor(modelItem => item.Suggestion)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.QuestionWeight)
+            @Html.DisplayFor(modelItem => item.Weight)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.QuestionType)
+            @Html.DisplayFor(modelItem => item.Type)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Active)

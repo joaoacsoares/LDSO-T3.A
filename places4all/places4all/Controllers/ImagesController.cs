@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class ImagesController : Controller
     {
-        private places4allDB db = new places4allDB();
+        private ImageDBContext db = new ImageDBContext();
 
         // GET: Images
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ImageId,PlaceId,ImageName")] Image image)
+        public ActionResult Create([Bind(Include = "ImageId,Name")] Image image)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ImageId,PlaceId,ImageName")] Image image)
+        public ActionResult Edit([Bind(Include = "ImageId,Name")] Image image)
         {
             if (ModelState.IsValid)
             {

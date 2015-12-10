@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class AuditsController : Controller
     {
-        private places4allDB db = new places4allDB();
+        private AuditDBContext db = new AuditDBContext();
 
         // GET: Audits
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AuditId,PlaceId,UserId,AuditDate,AuditWCJustPT,AuditWCJustEN,AuditParkJustPT,AuditParkJustEN,AuditGASJustPT,AuditGASJustEN,AuditIntJustPT,AuditIntJustEN,AuditOutJustPT,AuditOutJustEN,AuditHallJustPT,AuditHallJustEN,AuditIntRoute,AuditOutRoute,AuditHallway,AuditWC,AuditCarPark,AuditGoodsServ,AuditTotal")] Audit audit)
+        public ActionResult Create([Bind(Include = "AuditId,AuditDate,AuditWCJustPT,AuditWCJustEN,AuditParkJustPT,AuditParkJustEN,AuditGASJustPT,AuditGASJustEN,AuditInJustPT,AuditInJustEN,AuditOutJustPT,AuditOutJustEN,AuditHallJustPT,AuditHallJustEN,AuditIntRoute,AuditOutRoute,AuditHallway,AuditWC,AuditCarPark,AuditGoodsServ,AuditTotal,Distico")] Audit audit)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AuditId,PlaceId,UserId,AuditDate,AuditWCJustPT,AuditWCJustEN,AuditParkJustPT,AuditParkJustEN,AuditGASJustPT,AuditGASJustEN,AuditIntJustPT,AuditIntJustEN,AuditOutJustPT,AuditOutJustEN,AuditHallJustPT,AuditHallJustEN,AuditIntRoute,AuditOutRoute,AuditHallway,AuditWC,AuditCarPark,AuditGoodsServ,AuditTotal")] Audit audit)
+        public ActionResult Edit([Bind(Include = "AuditId,AuditDate,AuditWCJustPT,AuditWCJustEN,AuditParkJustPT,AuditParkJustEN,AuditGASJustPT,AuditGASJustEN,AuditInJustPT,AuditInJustEN,AuditOutJustPT,AuditOutJustEN,AuditHallJustPT,AuditHallJustEN,AuditIntRoute,AuditOutRoute,AuditHallway,AuditWC,AuditCarPark,AuditGoodsServ,AuditTotal,Distico")] Audit audit)
         {
             if (ModelState.IsValid)
             {

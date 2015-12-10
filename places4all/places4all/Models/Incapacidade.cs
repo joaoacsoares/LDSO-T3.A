@@ -8,7 +8,11 @@ namespace places4all.Models
 {
     public class Incapacidade
     {
-        public int IncapacidadeId { get; set; }
+        public int Id { get; set; }
         public string Designation { get; set; }
+    }
+    public class IncapacidadeDBContext : DbContext
+    {
+        public DbSet<Incapacidade> Incapacidades { get; set; }
     }
 }

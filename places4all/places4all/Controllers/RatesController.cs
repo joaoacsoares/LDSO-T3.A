@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class RatesController : Controller
     {
-        private places4allDB db = new places4allDB();
+        private RateDBContext db = new RateDBContext();
 
         // GET: Rates
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "RateId,UserId,PlaceId,Grade")] Rate rate)
+        public ActionResult Create([Bind(Include = "RateId,Grade")] Rate rate)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "RateId,UserId,PlaceId,Grade")] Rate rate)
+        public ActionResult Edit([Bind(Include = "RateId,Grade")] Rate rate)
         {
             if (ModelState.IsValid)
             {

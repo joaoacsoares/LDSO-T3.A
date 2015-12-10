@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class ReportProblemsController : Controller
     {
-        private places4allDB db = new places4allDB();
+        private ReportProblemDBContext db = new ReportProblemDBContext();
 
         // GET: ReportProblems
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ReportProblemId,UserId,PlaceId,ProblemDescription,ProblemPhoto")] ReportProblem reportProblem)
+        public ActionResult Create([Bind(Include = "ReportProblemId,ProblemDescription,ProblemPhoto")] ReportProblem reportProblem)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ReportProblemId,UserId,PlaceId,ProblemDescription,ProblemPhoto")] ReportProblem reportProblem)
+        public ActionResult Edit([Bind(Include = "ReportProblemId,ProblemDescription,ProblemPhoto")] ReportProblem reportProblem)
         {
             if (ModelState.IsValid)
             {

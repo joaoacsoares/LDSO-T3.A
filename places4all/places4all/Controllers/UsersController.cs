@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class UsersController : Controller
     {
-        private places4allDB db = new places4allDB();
+        private UserDBContext db = new UserDBContext();
 
         // GET: Users
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "UserId,Email,PassHash,Name,Newsletter,CreationDate,StateDate,LastAccessDate,UserState,AuthProvider,ExternalId,UserImage,IsVisible,Auditor")] User user)
+        public ActionResult Create([Bind(Include = "UserId,Email,PassHash,Name,Newsletter,CreationDate,StateDate,LastAccessDate,State,AuthProvider,ExternalId,Image,IsVisible,Auditor")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "UserId,Email,PassHash,Name,Newsletter,CreationDate,StateDate,LastAccessDate,UserState,AuthProvider,ExternalId,UserImage,IsVisible,Auditor")] User user)
+        public ActionResult Edit([Bind(Include = "UserId,Email,PassHash,Name,Newsletter,CreationDate,StateDate,LastAccessDate,State,AuthProvider,ExternalId,Image,IsVisible,Auditor")] User user)
         {
             if (ModelState.IsValid)
             {

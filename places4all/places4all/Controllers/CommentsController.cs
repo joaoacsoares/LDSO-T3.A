@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class CommentsController : Controller
     {
-        private places4allDB db = new places4allDB();
+        private CommentDBContext db = new CommentDBContext();
 
         // GET: Comments
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CommentId,UserId,PlaceId,Content,Date")] Comment comment)
+        public ActionResult Create([Bind(Include = "CommentId,Content,Date")] Comment comment)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "CommentId,UserId,PlaceId,Content,Date")] Comment comment)
+        public ActionResult Edit([Bind(Include = "CommentId,Content,Date")] Comment comment)
         {
             if (ModelState.IsValid)
             {

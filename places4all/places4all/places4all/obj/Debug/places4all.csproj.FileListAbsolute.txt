@@ -1,0 +1,276 @@
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\csc.exe
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\vbc.exe
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\VBCSCompiler.exe
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\places4all.dll.config
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\places4all.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\places4all.pdb
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Antlr3.Runtime.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\EntityFramework.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\EntityFramework.SqlServer.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Newtonsoft.Json.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Owin.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.Helpers.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.Mvc.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.Optimization.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.Razor.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.WebPages.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.WebPages.Razor.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\WebGrease.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.Helpers.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.Mvc.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.Optimization.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.Razor.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.WebPages.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\System.Web.WebPages.Razor.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Antlr3.Runtime.pdb
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Newtonsoft.Json.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\EntityFramework.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\EntityFramework.SqlServer.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\obj\Debug\places4all.csprojResolveAssemblyReference.cache
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\obj\Debug\places4all.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\places4all\places4all\places4all\obj\Debug\places4all.pdb
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\csc.exe
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\vbc.exe
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\VBCSCompiler.exe
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\places4all.dll.config
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\places4all.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\places4all.pdb
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Antlr3.Runtime.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\EntityFramework.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\EntityFramework.SqlServer.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Newtonsoft.Json.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Owin.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Helpers.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Mvc.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Optimization.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Razor.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.Razor.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\WebGrease.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Helpers.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Mvc.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Optimization.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Razor.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.Razor.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Antlr3.Runtime.pdb
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Newtonsoft.Json.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\EntityFramework.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\EntityFramework.SqlServer.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\obj\Debug\places4all.csprojResolveAssemblyReference.cache
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\obj\Debug\places4all.dll
+C:\Users\Pedro\Documents\GitHub\LDSO-T3.A\places4all\places4all\places4all\obj\Debug\places4all.pdb
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\csc.exe
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\vbc.exe
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\places4all.dll.config
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\places4all.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\places4all.pdb
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Antlr3.Runtime.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\EntityFramework.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\EntityFramework.SqlServer.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Newtonsoft.Json.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Owin.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.Helpers.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.Mvc.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.Optimization.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.Razor.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.WebPages.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\WebGrease.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.Helpers.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.Mvc.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.Optimization.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.Razor.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.WebPages.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Antlr3.Runtime.pdb
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Newtonsoft.Json.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\EntityFramework.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\EntityFramework.SqlServer.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\obj\Debug\places4all.csprojResolveAssemblyReference.cache
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\obj\Debug\places4all.dll
+C:\Users\Mafalda\Documents\Visual Studio 2015\Projects\places4all\places4all\places4all\obj\Debug\places4all.pdb
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\csc.exe
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\vbc.exe
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\VBCSCompiler.exe
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\places4all.dll.config
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\places4all.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\places4all.pdb
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Antlr3.Runtime.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\EntityFramework.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\EntityFramework.SqlServer.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Newtonsoft.Json.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Owin.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Helpers.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Mvc.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Optimization.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Razor.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.Razor.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\WebGrease.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Helpers.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Mvc.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Optimization.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.Razor.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\System.Web.WebPages.Razor.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Antlr3.Runtime.pdb
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Newtonsoft.Json.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\EntityFramework.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\EntityFramework.SqlServer.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\obj\Debug\places4all.csprojResolveAssemblyReference.cache
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\obj\Debug\places4all.dll
+C:\Users\Joao\Documents\MIEIC\4º Ano\LDSO\LDSO-T3.A\places4all\places4all\places4all\obj\Debug\places4all.pdb

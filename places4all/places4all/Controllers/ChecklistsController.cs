@@ -12,7 +12,7 @@ namespace places4all.Controllers
 {
     public class ChecklistsController : Controller
     {
-        private places4allDB db = new places4allDB();
+        private ChecklistDBContext db = new ChecklistDBContext();
 
         // GET: Checklists
         public ActionResult Index()
@@ -46,7 +46,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ChecklistId,AuditId,Identifier,ChecklistDate,Active")] Checklist checklist)
+        public ActionResult Create([Bind(Include = "ChecklistId,Identifier,Date,Active")] Checklist checklist)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace places4all.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ChecklistId,AuditId,Identifier,ChecklistDate,Active")] Checklist checklist)
+        public ActionResult Edit([Bind(Include = "ChecklistId,Identifier,Date,Active")] Checklist checklist)
         {
             if (ModelState.IsValid)
             {

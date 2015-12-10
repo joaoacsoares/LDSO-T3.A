@@ -12,12 +12,6 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.PlaceId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UserId)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.AuditDate)
         </th>
         <th>
@@ -39,10 +33,10 @@
             @Html.DisplayNameFor(model => model.AuditGASJustEN)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AuditIntJustPT)
+            @Html.DisplayNameFor(model => model.AuditInJustPT)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.AuditIntJustEN)
+            @Html.DisplayNameFor(model => model.AuditInJustEN)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.AuditOutJustPT)
@@ -77,17 +71,14 @@
         <th>
             @Html.DisplayNameFor(model => model.AuditTotal)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distico)
+        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.PlaceId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserId)
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.AuditDate)
         </td>
@@ -110,10 +101,10 @@
             @Html.DisplayFor(modelItem => item.AuditGASJustEN)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AuditIntJustPT)
+            @Html.DisplayFor(modelItem => item.AuditInJustPT)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.AuditIntJustEN)
+            @Html.DisplayFor(modelItem => item.AuditInJustEN)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AuditOutJustPT)
@@ -147,6 +138,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.AuditTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distico)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.AuditId }) |
