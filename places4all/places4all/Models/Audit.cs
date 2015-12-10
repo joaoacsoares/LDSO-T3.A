@@ -9,6 +9,8 @@ namespace places4all.Models
     public class Audit
     {
         public int AuditId { get; set; }
+        public int PlaceId { get; set; }
+        public int UserId { get; set; }
         public DateTime AuditDate { get; set; }
         public string AuditWCJustPT { get; set; }
         public string AuditWCJustEN { get; set; }
@@ -16,8 +18,8 @@ namespace places4all.Models
         public string AuditParkJustEN { get; set; }
         public string AuditGASJustPT { get; set; }
         public string AuditGASJustEN { get; set; }
-        public string AuditInJustPT { get; set; }
-        public string AuditInJustEN { get; set; }
+        public string AuditIntJustPT { get; set; }
+        public string AuditIntJustEN { get; set; }
         public string AuditOutJustPT { get; set; }
         public string AuditOutJustEN { get; set; }
         public string AuditHallJustPT { get; set; }
@@ -29,11 +31,5 @@ namespace places4all.Models
         public decimal AuditCarPark { get; set; }
         public decimal AuditGoodsServ { get; set; }
         public decimal AuditTotal { get; set; }
-        public string Distico { get; set; }
-    }
-
-    public class AuditDBContext : DbContext
-    {
-        public DbSet<Audit> Audits { get; set; }
     }
 }

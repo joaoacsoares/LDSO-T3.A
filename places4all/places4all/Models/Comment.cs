@@ -9,11 +9,9 @@ namespace places4all.Models
     public class Comment
     {
         public int CommentId { get; set; }
+        public int UserId { get; set; }
+        public int PlaceId { get; set; }
         public string Content { get; set; }
         public DateTime Date { get; set; }
-    }
-    public class CommentDBContext : DbContext
-    {
-        public DbSet<Comment> Comments { get; set; }
     }
 }

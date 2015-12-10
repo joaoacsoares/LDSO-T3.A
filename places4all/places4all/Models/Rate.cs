@@ -9,10 +9,8 @@ namespace places4all.Models
     public class Rate
     {
         public int RateId { get; set; }
+        public int UserId { get; set; }
+        public int PlaceId { get; set; }
         public int Grade { get; set; }
-    }
-    public class RateDBContext : DbContext
-    {
-        public DbSet<Rate> Rates { get; set; }
     }
 }
