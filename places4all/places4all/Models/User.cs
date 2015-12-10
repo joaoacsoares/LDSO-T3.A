@@ -16,15 +16,11 @@ namespace places4all.Models
         public DateTime CreationDate { get; set; }
         public DateTime StateDate { get; set; }
         public DateTime LastAccessDate { get; set; }
-        public string State { get; set; }
+        public string UserState { get; set; }
         public string AuthProvider { get; set; }
         public int ExternalId { get; set; }
-        public string Image { get; set; }
+        public string UserImage { get; set; }
         public bool IsVisible { get; set; }
         public bool Auditor { get; set; }
-    }
-    public class UserDBContext : DbContext
-    {
-        public DbSet<User> Users { get; set; }
     }
 }

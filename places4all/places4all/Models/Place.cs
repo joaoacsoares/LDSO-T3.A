@@ -15,15 +15,12 @@ namespace places4all.Models
         public string DescricaoPT { get; set; }
         public string DescricaoEN { get; set; }
         public string Contacto { get; set; }
-        public string TipoEspaco { get; set; }
+        public int TipoEspaco { get; set; }
         public decimal Latitude { get; set; }
         public decimal Longitude { get; set; }
+        public decimal Direcao { get; set; }
         public string Distrito { get; set; }
         public bool Auditado { get; set; }
         public string PlaceAdmin { get; set; }
-    }
-    public class PlaceDBContext : DbContext
-    {
-        public DbSet<Place> Places { get; set; }
     }
 }

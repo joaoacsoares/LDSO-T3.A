@@ -10,10 +10,6 @@ namespace places4all.Models
     {
         public int MediaId { get; set; }
         public string MediaLink { get; set; }
-        public DateTime Date { get; set; }
-    }
-    public class MediaDBContext : DbContext
-    {
-        public DbSet<Media> Medias { get; set; }
+        public DateTime MediaDate { get; set; }
     }
 }
