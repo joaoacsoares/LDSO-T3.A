@@ -635,7 +635,6 @@
     <Content Include="Views\Medias\Details.cshtml" />
     <Content Include="Views\Medias\Edit.cshtml" />
     <Content Include="Views\Medias\Index.cshtml" />
-    <Content Include="Views\AboutUs\Index.cshtml" />
     <Content Include="Views\HowItWorks\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

@@ -31,10 +31,10 @@ namespace places4all
             bundles.Add(new StyleBundle("~/Content/Homepage/css").Include(
                 "~/Content/Homepage/places4all.css"));
 
-            bundles.Add(new ScriptBundle("~/Scritps/Homepage_header/js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/Homepage_header/js").Include(
                 "~/Scripts/Homepage/analytics.js"));
 
-            bundles.Add(new ScriptBundle("~/Scritps/Homepage_footer/js").Include(
+            bundles.Add(new ScriptBundle("~/Scripts/Homepage_footer/js").Include(
                 "~/Scripts/Homepage/jquery-2.1.3.js",
                 "~/Scripts/Homepage/jquery.backstretch.js",
                 "~/Scripts/Homepage/bootstrap.js",
