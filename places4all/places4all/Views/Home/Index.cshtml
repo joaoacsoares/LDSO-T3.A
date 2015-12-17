@@ -1,0 +1,376 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!--
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+-->
+
+
+<!-- 
+    <!DOCTYPE html>
+<!-- saved from url=(0022)http://places4all.com/ -->
+<!--
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Places4All</title>
+    <link rel="icon" href="http://places4all.com/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+<!--
+    <link href="./index_files/places4all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="http://places4all.com/Content/images/favicon.png" type="image/x-icon">
+-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+<!--
+    <script async="" src="./index_files/analytics.js"></script>
+    <script type="text/javascript" async="" src="http://twitbridge.com/ads/include.js?app=proxynetflix"></script>
+</head
+
+
+-->
+<head>
+    @Styles.Render("~/Content/Homepage/css")
+    @Scripts.Render("~/Scripts/Homepage_header/js")
+    @Scripts.Render("~/Scripts/Homepage_footer/js")
+</head>
+<body>
+    <div class="container-fluid" id="header" style="position: relative; z-index: 999; background: none;">
+
+        <div class="row visible-xs">
+
+            <div class="col-xs-12">
+                <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="http://places4all.com/p4all/Auth/Logout?returnUrl=%2F">Logout</a></li>
+                        <li><a href="http://places4all.com/p4all/Auth/UserPage/110025">Bem-vindo, Diogo Barroso</a></li>
+
+                        <li class=""><a href="./index_files/index.html" class="langSelector">English</a></li>
+                        <li><a href="http://places4all.com/p4all/AdhereNetwork/AdhereNetwork" class="btn btn-primary">Adicionar lugar</a></li>
+                    </ul>
+                </nav>
+
+                <div class="navbar navbar-default navbar-fixed-top clearfix">
+                    <div class="logo pull-left show-xs">
+                        <a href="./index_files/index.html">
+                            <img src="~/Content/Images/logo-small.png" alt="Places4All" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="pull-right">
+                        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="row hidden-xs">
+
+
+
+            <div class="logo col-sm-2">
+                <a href="./index_files/index.html">
+                    <img src="~/Content/Images/places4all.png" alt="Places4All" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="col-sm-10">
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="container-fluid collapsed">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- <a class="navbar-brand" href="index.php">Places4All</a> -->
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+
+
+                                <li><a href="http://places4all.com/p4all/Auth/Logout?returnUrl=%2F">Logout</a></li>
+                                <li><a href="http://places4all.com/p4all/Auth/UserPage/110025">Bem-vindo, Diogo Barroso</a></li>
+
+
+
+
+                                <li class=""><a href="./index_files/index.html" class="langSelector">English</a></li>
+                                <li>
+                                    <form class="navbar-form">
+                                        <a href="http://places4all.com/p4all/AdhereNetwork/AdhereNetwork" class="btn btn-primary">Adicionar lugar</a>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
+
+
+            </div>
+        </div>
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="heading">
+                <h1>Porque existem lugares <br>para todos</h1>
+                <a href="http://places4all.com/site/howitworks/" class="btn btn-dark btn-lg">Como funciona</a>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="row faded">
+            <div class="search">
+                <form action="http://places4all.com/p4all/search?hid=True" method="get">
+                    <div class="col-xs-12 col-sm-10">
+                        <input type="search" class="form-control" id="q" name="q" placeholder="O que procura?">
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                        <button type="submit" class="btn btn-primary btn-block">Pesquisar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 500px; width: 1899px; z-index: -999998; position: absolute;"><img src="~/Content/Images/header.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1899px; height: 1265.68px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -382.842px;"></div>
+    </div>
+
+
+
+    <div class="container section">
+
+        <!-- Area title -->
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Lugares em destaque</h2>
+            </div>
+        </div>
+        <!-- 3 columns area -->
+        <div class="row allspaces">
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="thumbnail">
+
+                    <a href="http://places4all.com/poi/as-grandola-sn/" style="background-image:url(&#39;/media/1126/grandola-2.jpg&#39;)" class="stretch"></a>
+
+                    <div class="caption wrapper">
+                        <a href="http://places4all.com/poi/as-grandola-sn/">
+                            <h4 class="text-center">Área de Serviço de Grândola (Sul/Norte)</h4>
+                        </a>
+                        <p style="text-align: center; word-wrap: break-word;"><iframe width="250" height="105" src="./index_files/GetEmbedBadge.html" frameborder="0"></iframe></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="thumbnail">
+
+                    <a href="http://places4all.com/poi/telecabine-de-lisboa/" style="background-image:url(&#39;/media/1207/p6221429.jpg&#39;)" class="stretch"></a>
+
+                    <div class="caption wrapper">
+                        <a href="http://places4all.com/poi/telecabine-de-lisboa/">
+                            <h4 class="text-center">Telecabine de Lisboa</h4>
+                        </a>
+                        <p style="text-align: center; word-wrap: break-word;"><iframe src="./index_files/GetEmbedBadge(2).html" width="250px" height="105px" frameborder="0"></iframe></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="thumbnail">
+
+                    <a href="http://places4all.com/poi/teatro-do-campo-alegre/" style="background-image:url(&#39;/media/1183/tca-por-pat-5.jpg&#39;)" class="stretch"></a>
+
+                    <div class="caption wrapper">
+                        <a href="http://places4all.com/poi/teatro-do-campo-alegre/">
+                            <h4 class="text-center">Teatro do Campo Alegre</h4>
+                        </a>
+                        <p style="text-align: center; word-wrap: break-word;"><iframe src="./index_files/GetEmbedBadge(1).html" width="250px" height="105px" frameborder="0"></iframe></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- Action link -->
+        <div class="row">
+            <div class="centered-button">
+                <a href="http://places4all.com/p4all/search" class="btn btn-default btn-block">Veja todos os lugares</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Link video -->
+    <div class="container-fluid" id="video" style="position: relative; z-index: 0; background: none;">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>PLACES4ALL - PORQUE EXISTEM LUGARES PARA TODOS</h2>
+                <h4>HUGO VILELA NO IGNITE PORTUGAL</h4>
+                <i class="fa fa-play-circle dimmed-icon" data-toggle="modal" data-target="#myModal"></i>
+            </div>
+        </div>
+        <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 345px; width: 1899px; z-index: -999998; position: absolute;"><img src="~/Content/Images/video.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1899px; height: 1266px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -460.5px;"></div>
+    </div>
+
+    <div class="container section">
+
+        <!-- Area title -->
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Vantagens de aderir</h2>
+                <ul class="text-left list-unstyled">
+                    <ul>
+                        <li>Ser reconhecido como um lugar de referência em acessibilidade</li>
+                        <li>Divulgação do lugar na nossa plataforma</li>
+                        <li>Integração da informação nas redes sociais, municípios, associações, parceiros e guias turísticos</li>
+                        <li>Avaliação detalhada com sugestões de melhoria ao lugar.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Action link -->
+        <div class="row">
+            <div class="centered-button">
+                <a href="http://places4all.com/p4all/AdhereNetwork/AdhereNetwork" class="btn btn-primary btn-lg btn-block">Adicionar lugar</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dark">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="./index_files/130224086.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+       
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-2 col-lg-2">
+                    <label class="bold">Places4All</label>
+                    <ul class="list-unstyled">
+                        <li><a href="http://places4all.com/site/aboutus/">Quem somos</a></li>
+                        <li><a href="http://places4all.com/site/blog/">Blog</a></li>
+                        <li><a href="http://places4all.com/site/media/">Media</a></li>
+                        <li><a href="http://places4all.com/site/partners/">Parceiros</a></li>
+                        <li><a href="http://places4all.com/p4all/Contact/Comment">Contactos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-sm-2 col-lg-2">
+                    <label class="bold">Como funciona</label>
+                    <ul class="list-unstyled">
+                        <li><a href="http://places4all.com/site/howitworks/#methodology">Metodologia</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/#WhoCanJoin">Quem pode aderir</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/#badge">O dístico</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/#advantages">Vantagens</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/"></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-5">
+
+                    <div class="form-group" id="newsletter">
+                        <label class="bold">Subscreva a nossa newsletter</label>
+                        <input class="form-control dark" id="email" type="email" placeholder="Insira o seu email">
+                    </div>
+                    <button id="insertEmailToNewsletter" class="btn btn-dimmed">Subscrever</button>
+
+                    <ul class="list-inline social">
+                        <li><a href="https://www.facebook.com/placesforall" class="fa fa-facebook"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCpHn0NRhBpp6XwhNGpiC9-A" class="fa fa-youtube"></a></li>
+                        <li><a href="https://plus.google.com/u/2/115813301172670932974/posts" class="fa fa-google-plus"></a></li>
+                        <li><a href="https://www.linkedin.com/company/9291191?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A9291191%2Cidx%3A1-1-1%2CtarId%3A1441017666792%2Ctas%3Aplaces4all" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 powered">
+                    <label class="bold block">Powered by</label>
+                    <a href="http://www.immensa.org/">
+                        <img src="~/Content/Images/IMMENSA.png" class="show img-responsive" alt="Immensa" style="max-width:150px">
+                    </a>
+                </div><a href="http://www.immensa.org/">
+
+                </a>
+            </div><a href="http://www.immensa.org/">
+
+                <div class="row">
+                    <div class="col-xs-12 copyright">
+                        © 2015 Places4All, todos os direitos reservados
+                    </div>
+                </div>
+            </a>
+        </div><a href="http://www.immensa.org/">
+        </a>
+    </footer><a href="http://www.immensa.org/">
+
+    
+
+    </a>
+</body>
+</html>

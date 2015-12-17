@@ -1,0 +1,548 @@
+﻿@model places4all.Models.User
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<head>
+    @Styles.Render("~/Content/Register/css")
+    @Scripts.Render("~/Scritps/Register/js")
+</head>
+
+<script>
+    $(document).ready(function () {
+        $(".langSelector").click(function () {
+            $.cookie('p4alllang', 'pt-PT', { expires: new Date(2500, 1, 1), path: '/' });
+            return true;
+            $.ajax({
+                url: "/LanguageServerErrorsUtils/SetLanguage/pt",
+                type: "POST",
+                dataType: 'text',
+                contentType: "application/json",
+                success: function (response) {
+                    location.reload();
+                }
+            });
+        });
+    });
+
+</script>
+
+<script>
+
+
+    // This is called with the results from from FB.getLoginStatus().
+    function statusChangeCallback(response) {
+        //console.log('statusChangeCallback');
+        //console.log(response);
+        // The response object is returned with a status field that lets the
+        // app know the current login status of the person.
+        // Full docs on the response object can be found in the documentation
+        // for FB.getLoginStatus().
+        if (response.status === 'connected') {
+            // Logged into your app and Facebook.
+
+            var token = response.authResponse.accessToken;
+
+            $.ajax({
+                url: "/p4all/Auth/LoginViaFacebook",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ myKey: token, returnUrl :"/" }),
+                success: function (response) {
+                    window.location.href = "/p4all/Auth/Login";
+                }
+            });
+
+
+
+        } else if (response.status === 'not_authorized') {
+            // The person is logged into Facebook, but not your app.
+            document.getElementById('status').innerHTML = 'Please log ' +
+              'into this app.';
+        } else {
+            // The person is not logged into Facebook, so we're not sure if
+            // they are logged into this app or not.
+            document.getElementById('status').innerHTML = 'Please log ' +
+              'into Facebook.';
+        }
+    }
+
+    // This function is called when someone finishes with the Login
+    // Button.  See the onlogin handler attached to it in the sample
+    // code below.
+    function checkLoginState() {
+        FB.getLoginStatus(function (response) {
+            statusChangeCallback(response);
+        });
+    }
+
+
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '696080683736885',
+            cookie: true,
+            xfbml: true,
+            version: 'v2.2'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+</script>
+
+
+<script src="./signup_files/api.js"></script>
+
+<!--
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>User</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PassHash, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PassHash, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PassHash, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Newsletter, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.Newsletter)
+                    @Html.ValidationMessageFor(model => model.Newsletter, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CreationDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CreationDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CreationDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StateDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.StateDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.StateDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastAccessDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastAccessDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastAccessDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserState, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.UserState, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.UserState, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AuthProvider, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AuthProvider, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AuthProvider, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ExternalId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ExternalId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ExternalId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserImage, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.UserImage, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.UserImage, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IsVisible, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.IsVisible)
+                    @Html.ValidationMessageFor(model => model.IsVisible, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Auditor, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.Auditor)
+                    @Html.ValidationMessageFor(model => model.Auditor, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+-->
+<body>
+    <div class="container-fluid header">
+
+        <!-- Navigation -->
+        <div class="row visible-xs">
+
+            <div class="col-xs-12">
+                <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" role="navigation">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="http://places4all.com/p4all/Auth/Register?returnUrl=%2Fp4all%2FAuth%2FRegister">Sign up</a></li>
+                        <li><a href="http://places4all.com/p4all/Auth/Login?returnUrl=%2Fp4all%2FAuth%2FRegister">Login</a></li>
+
+                        <li class=""><a href="./signup_files/signup.html" class="langSelector">Português</a></li>
+                        <li><a href="http://places4all.com/p4all/AdhereNetwork/AdhereNetwork" class="btn btn-primary">Add place</a></li>
+                    </ul>
+                </nav>
+
+                <div class="navbar navbar-default navbar-fixed-top clearfix">
+                    <div class="logo pull-left show-xs">
+                        <a href="http://places4all.com/">
+                            <img src="./signup_files/logo-small.png" alt="Places4All" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="pull-right">
+                        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hidden-xs">
+
+            <div class="logo small col-sm-2 col-lg-1">
+                <a href="http://places4all.com/">
+                    <img src="./signup_files/logo-small.png" alt="Places4All" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-sm-10 col-lg-11">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <!-- <a class="navbar-brand" href="index.php">Places4All</a> -->
+                        </div>
+                        <form action="http://places4all.com/p4all/search" method="get">
+                            <div class="navbar-form navbar-left hidden-sm" role="search">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                                    </span>
+                                    <input type="text" class="form-control" id="search" name="q" placeholder="What are you looking for?" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+
+
+                                <li><a href="http://places4all.com/p4all/Auth/Register?returnUrl=%2Fp4all%2FAuth%2FRegister">Sign up</a></li>
+                                <li><a href="http://places4all.com/p4all/Auth/Login?returnUrl=%2Fp4all%2FAuth%2FRegister">Login</a></li>
+
+
+
+
+                                <li class=""><a href="./signup_files/signup.html" class="langSelector">Português</a></li>
+                                <li>
+                                    <form class="navbar-form">
+                                        <a href="http://places4all.com/p4all/AdhereNetwork/AdhereNetwork" class="btn btn-primary">Add place</a>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="main">
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="slab">Sign up</h2>
+                    <hr class="primary-bg centered">
+                </div>
+            </div>
+            <form returnurl="/p4all/Auth/Login" action="http://places4all.com/p4all/Auth/Register" class="custom registo" method="post">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+
+                    </div>
+                </div>
+                <input name="__RequestVerificationToken" type="hidden" value="D1WrK2q7Fc9tGfCuLWWVEpfFVPZBwHyDpAzSQ4SbLdhABl-N8PNXhAHgD0i6XLr34hbl7OF72QzNuJAvR44oPNE4cjrHEg1ObR-DH76kxDY1">        <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+                        <fb:login-button scope="email" onlogin="checkLoginState();" size="xlarge" login_text="Sign up Facebook" class=" fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=696080683736885&amp;container_width=115&amp;locale=en_US&amp;login_text=Sign%20up%20Facebook&amp;scope=email&amp;sdk=joey&amp;size=xlarge"><span style="vertical-align: bottom; width: 258px; height: 39px;"><iframe name="f3db6ab2d" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:login_button Facebook Social Plugin" src="./signup_files/login_button.html" style="border: none; visibility: visible; width: 258px; height: 39px;" class=""></iframe></span></fb:login-button>
+                        <hr class="clear">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-push-2">
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input class="form-control" id="Name" name="Name" type="text" value="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-push-2">
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input autocomplete="off" class="form-control" id="Email" name="Email" type="text" value="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-push-2">
+                        <div class="form-group">
+                            <label for="Password">Password (minimum 4 characters)</label>
+                            <input autocomplete="off" class="form-control" id="Password" name="Password" type="password">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-push-2">
+                        <div class="form-group">
+                            <label for="PasswordConfirmation">Confirm your password</label>
+                            <input autocomplete="off" class="form-control" id="PasswordConfirmation" name="PasswordConfirmation" type="password">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-push-2">
+                        <p class="slab text-center">
+                            To prevent the use of automated programs , we ask you to fill in the following information
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-push-2">
+                        <div class="g-recaptcha below-lv3" data-sitekey="6LeOjgkTAAAAAPffIy_wAm3eKI3zfJgZK80pWjgg"><div><div style="width: 304px; height: 78px;"><iframe src="./signup_files/anchor.html" title="recaptcha widget" width="304" height="78" role="presentation" frameborder="0" scrolling="no"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+                        <button type="submit" value="Registar" class="btn btn-primary btn-lg btn-block">Submit</button>
+                        <hr class="clear">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        
+
+    </div>
+
+    <div class="row visible-print-inline">
+        <div class="col-xs-12">
+            <img src="./signup_files/logo-small.png" alt="Places4All" class="img-responsive">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container hidden-print">
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-2 col-lg-2">
+                    <label class="bold">Places4All</label>
+                    <ul class="list-unstyled">
+                        <li><a href="http://places4all.com/site/aboutus/">About us</a></li>
+                        <li><a href="http://places4all.com/site/blog/">Blog</a></li>
+                        <li><a href="http://places4all.com/site/media/">Media</a></li>
+                        <li><a href="http://places4all.com/site/partners/">Partners</a></li>
+                        <li><a href="http://places4all.com/p4all/Contact/Comment">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-sm-2 col-lg-2">
+                    <label class="bold">How it works</label>
+                    <ul class="list-unstyled">
+                        <li><a href="http://places4all.com/site/howitworks/#methodology">Methodology</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/#WhoCanJoin">Who can join</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/#badge">The badge</a></li>
+                        <li><a href="http://places4all.com/site/howitworks/#advantages">Advantages</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-5">
+                    <form>
+                        <div class="form-group">
+                            <label class="bold">Subscribe to our newsletter</label>
+                            <input class="form-control dark" type="email" placeholder="Insert your email">
+                        </div>
+                        <button type="submit" class="btn btn-dimmed">Subscribe</button>
+                    </form>
+                    <ul class="list-inline social">
+                        <li><a href="https://www.facebook.com/placesforall" class="fa fa-facebook"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCpHn0NRhBpp6XwhNGpiC9-A" class="fa fa-youtube"></a></li>
+                        <li><a href="https://plus.google.com/u/2/115813301172670932974/posts" class="fa fa-google-plus"></a></li>
+                        <li><a href="https://www.linkedin.com/company/9291191?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A9291191%2Cidx%3A1-1-1%2CtarId%3A1441017666792%2Ctas%3Aplaces4all" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3 powered hidden-print">
+                    <label class="bold block">Powered by</label>
+                    <a href="http://www.immensa.org/">
+                        <img src="./signup_files/IMMENSA.png" class="show img-responsive" alt="Immensa" style="max-width:150px">
+                    </a>
+                </div><a href="http://www.immensa.org/">
+
+                </a>
+            </div><a href="http://www.immensa.org/">
+
+                <div class="row">
+                    <div class="col-xs-12 copyright">
+                        © 2015 Places4All, all rights reserved
+                    </div>
+                </div>
+            </a>
+        </div><a href="http://www.immensa.org/">
+        </a>
+    </footer><a href="http://www.immensa.org/">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- The main application script -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="./signup_files/jquery.min.js"></script>
+        <script src="./signup_files/jquery.datetimepicker.js"></script>
+        <script src="./signup_files/jquery.backstretch.min.js"></script>
+        <script src="./signup_files/bootstrap.min.js"></script>
+        <script src="./signup_files/jasny-bootstrap.min.js"></script>
+        <script src="./signup_files/animatescroll.min.js"></script>
+        <script src="./signup_files/jquery.dotdotdot.min.js"></script>
+
+
+        <!-- UPLOAD -->
+        <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+        <script src="./signup_files/jquery.ui.widget.js"></script>
+        <!-- The Templates plugin is included to render the upload/download listings -->
+        <script src="./signup_files/tmpl.min.js"></script>
+        <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+        <script src="./signup_files/load-image.all.min.js"></script>
+        <!-- The Canvas to Blob plugin is included for image resizing functionality -->
+        <script src="./signup_files/canvas-to-blob.min.js"></script>
+        <!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+
+        <script src="./signup_files/bootstrap.min(1).js"></script>
+        <!-- blueimp Gallery script -->
+        <script src="./signup_files/jquery.blueimp-gallery.min.js"></script>
+        <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+        <script src="./signup_files/jquery.iframe-transport.js"></script>
+        <!-- The basic File Upload plugin -->
+        <script src="./signup_files/jquery.fileupload.js"></script>
+        <!-- The File Upload processing plugin -->
+        <script src="./signup_files/jquery.fileupload-process.js"></script>
+        <!-- The File Upload image preview & resize plugin -->
+        <script src="./signup_files/jquery.fileupload-image.js"></script>
+        <!-- The File Upload audio preview plugin -->
+        <script src="./signup_files/jquery.fileupload-audio.js"></script>
+        <!-- The File Upload video preview plugin -->
+        <script src="./signup_files/jquery.fileupload-video.js"></script>
+        <!-- The File Upload validation plugin -->
+        <script src="./signup_files/jquery.fileupload-validate.js"></script>
+        <!-- The File Upload user interface plugin -->
+        <script src="./signup_files/jquery.fileupload-ui.js"></script>
+
+        <!-- FIM UPLOAD -->
+
+        <script src="./signup_files/jquery.cookie.js"></script>
+        <script src="./signup_files/all.js"></script>
+
+
+        <script src="./signup_files/pfa.js"></script>
+        <script src="./signup_files/main.js"></script>
+
+
+
+
+    </a><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1" id="fb_xdm_frame_http" src="./signup_files/wjDNIDNrTQG.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1" id="fb_xdm_frame_https" src="./signup_files/wjDNIDNrTQG(1).html" style="border: none;"></iframe></div></div></div>
+</body>

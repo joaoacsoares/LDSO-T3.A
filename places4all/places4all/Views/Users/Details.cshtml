@@ -1,0 +1,122 @@
+﻿@model places4all.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassHash)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassHash)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Newsletter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Newsletter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastAccessDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastAccessDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthProvider)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthProvider)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExternalId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExternalId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsVisible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsVisible)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Auditor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Auditor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UserId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

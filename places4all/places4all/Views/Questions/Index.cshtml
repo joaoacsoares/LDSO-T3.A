@@ -1,0 +1,69 @@
+﻿@model IEnumerable<places4all.Models.Question>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ChecklistId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuestionText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Answer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Suggestion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuestionWeight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuestionType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChecklistId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuestionText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Answer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Suggestion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuestionWeight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuestionType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Active)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.QuestionId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.QuestionId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.QuestionId })
+        </td>
+    </tr>
+}
+
+</table>
