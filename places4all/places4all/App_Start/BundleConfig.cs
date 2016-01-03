@@ -161,39 +161,39 @@ namespace places4all
 
 
 
-            /* ABOUTUS BUNDLES */
-            bundles.Add(new StyleBundle("~/Content/AboutUs/css").Include(
-                "~/Content/AboutUs/jquery.datetimepicker.css",
-                "~/Content/AboutUs/places4all.css"));
+            /* SITE BUNDLES */
+            bundles.Add(new StyleBundle("~/Content/Site/css").Include(
+                "~/Content/Site/jquery.datetimepicker.css",
+                "~/Content/Site/places4all.css"));
 
-            bundles.Add(new ScriptBundle("~/Scripts/AboutUs/js").Include(
-                "~/Scripts/AboutUs/analytics.js",
-                 "~/Scripts/AboutUs/jquery-2.1.3.js",
-                 "~/Scripts/AboutUs/jquery.js",
-                 "~/Scripts/AboutUs/jquery.datetimepicker.js",
-                 "~/Scripts/AboutUs/jquery.backstretch.js",
-                 "~/Scripts/AboutUs/bootstrap.js",
-                 "~/Scripts/AboutUs/jasny.bootstrap.js",
-                 "~/Scripts/AboutUs/animatescrolljs",
-                 "~/Scripts/AboutUs/jquery.dotdotdot.js",
-                 "~/Scripts/AboutUs/jquery.ui.widget.js",
-                 "~/Scripts/AboutUs/tmpl.js",
-                 "~/Scripts/AboutUs/load-image.all.js",
-                 "~/Scripts/AboutUs/canvas-to-blob.js",
-                 "~/Scripts/AboutUs/bootstrap(1).js",
-                 "~/Scripts/AboutUs/jquery.blueimp-gallery.js",
-                 "~/Scripts/AboutUs/jquery.iframe-transport.js",
-                 "~/Scripts/AboutUs/jquery.fileupload.js",
-                 "~/Scripts/AboutUs/jquery.fileupload-process.js",
-                 "~/Scripts/AboutUs/jquery.fileupload-image.js",
-                 "~/Scripts/AboutUs/jquery.fileupload-audio.js",
-                 "~/Scripts/AboutUs/jquery.fileupload-video.js",
-                 "~/Scripts/AboutUs/jquery.fileupload-validate.js",
-                 "~/Scripts/AboutUs/jquery.fileupload-ui.js",
-                 "~/Scripts/AboutUs/jquery.cookie.js",
-                 "~/Scripts/AboutUs/all.js",
-                 "~/Scripts/AboutUs/pfa.js",
-                 "~/Scripts/AboutUs/main.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Site/js").Include(
+                "~/Scripts/Site/analytics.js",
+                 "~/Scripts/Site/jquery-2.1.3.js",
+                 "~/Scripts/Site/jquery.js",
+                 "~/Scripts/Site/jquery.datetimepicker.js",
+                 "~/Scripts/Site/jquery.backstretch.js",
+                 "~/Scripts/Site/bootstrap.js",
+                 "~/Scripts/Site/jasny.bootstrap.js",
+                 "~/Scripts/Site/animatescrolljs",
+                 "~/Scripts/Site/jquery.dotdotdot.js",
+                 "~/Scripts/Site/jquery.ui.widget.js",
+                 "~/Scripts/Site/tmpl.js",
+                 "~/Scripts/Site/load-image.all.js",
+                 "~/Scripts/Site/canvas-to-blob.js",
+                 "~/Scripts/Site/bootstrap(1).js",
+                 "~/Scripts/Site/jquery.blueimp-gallery.js",
+                 "~/Scripts/Site/jquery.iframe-transport.js",
+                 "~/Scripts/Site/jquery.fileupload.js",
+                 "~/Scripts/Site/jquery.fileupload-process.js",
+                 "~/Scripts/Site/jquery.fileupload-image.js",
+                 "~/Scripts/Site/jquery.fileupload-audio.js",
+                 "~/Scripts/Site/jquery.fileupload-video.js",
+                 "~/Scripts/Site/jquery.fileupload-validate.js",
+                 "~/Scripts/Site/jquery.fileupload-ui.js",
+                 "~/Scripts/Site/jquery.cookie.js",
+                 "~/Scripts/Site/all.js",
+                 "~/Scripts/Site/pfa.js",
+                 "~/Scripts/Site/main.js"));
 
 
 
@@ -346,9 +346,8 @@ namespace places4all
                  "~/Scripts/Register/all.js",
                  "~/Scripts/Register/pfa.js",
                  "~/Scripts/Register/main.js"));
-
-
-
         }
+
     }
+
 }
