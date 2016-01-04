@@ -64,7 +64,7 @@
 
 
 </script>
-<script src="./add_place_files/api.js"></script>
+<script src="~/Scripts/AddPlace/api.js"></script>
 <!--
 @using (Html.BeginForm()) 
 {
@@ -208,18 +208,18 @@
 
                     <ul class="nav navbar-nav navbar-right">
 
-                        <li><a href="http://places4all.com/p4all/Auth/Logout?returnUrl=%2Fp4all%2FAdhereNetwork%2FAdhereNetwork">Logout</a></li>
-                        <li><a href="http://places4all.com/p4all/Auth/UserPage/110025">Bem-vindo, Diogo Barroso</a></li>
+                        <li><a href="~/Home/Index">Logout</a></li>
+                        <li><a href="~/Users/Details/110025">Bem-vindo, Diogo Barroso</a></li> <!--http://places4all.com/p4all/Auth/UserPage/110025-->
 
-                        <li class=""><a href="./add_place_files/add_place.html" class="langSelector">English</a></li>
-                        <li><a href="./add_place_files/add_place.html" class="btn btn-primary">Adicionar lugar</a></li>
+                        <li class=""><a href="~/Places/Create" class="langSelector">English</a></li>
+                        <li><a href="~/Places/Create" class="btn btn-primary">Adicionar lugar</a></li>
                     </ul>
                 </nav>
 
                 <div class="navbar navbar-default navbar-fixed-top clearfix">
                     <div class="logo pull-left show-xs">
-                        <a href="http://places4all.com/">
-                            <img src="./add_place_files/logo-small.png" alt="Places4All" class="img-responsive">
+                        <a href="~/Home/Index">
+                            <img src="~/Content/Images/logo-small.png" alt="Places4All" class="img-responsive">
                         </a>
                     </div>
                     <div class="pull-right">
@@ -236,8 +236,8 @@
         <div class="row hidden-xs">
 
             <div class="logo small col-sm-2 col-lg-1">
-                <a href="http://places4all.com/">
-                    <img src="./add_place_files/logo-small.png" alt="Places4All" class="img-responsive">
+                <a href="~/Home/Index">
+                    <img src="~/Content/Images/logo-small.png" alt="Places4All" class="img-responsive">
                 </a>
             </div>
 
@@ -269,8 +269,8 @@
                             <ul class="nav navbar-nav navbar-right">
 
 
-                                <li><a href="http://places4all.com/p4all/Auth/Logout?returnUrl=%2Fp4all%2FAdhereNetwork%2FAdhereNetwork">Logout</a></li>
-                                <li><a href="http://places4all.com/p4all/Auth/UserPage/110025">Bem-vindo, Diogo Barroso</a></li>
+                                <li><a href="~/Home/Index">Logout</a></li>
+                                <li><a href="~/Users/Details/110025">Bem-vindo, Diogo Barroso</a></li> 
 
 
 
@@ -699,7 +699,7 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-md-8 col-md-push-2">
-                                <div class="g-recaptcha below-lv3 hidden-print" data-sitekey="6LeOjgkTAAAAAPffIy_wAm3eKI3zfJgZK80pWjgg"><div><div style="width: 304px; height: 78px;"><iframe src="./add_place_files/anchor.html" title="Widget recaptcha" width="304" height="78" role="presentation" frameborder="0" scrolling="no"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                                <div class="g-recaptcha below-lv3 hidden-print" data-sitekey="6LeOjgkTAAAAAPffIy_wAm3eKI3zfJgZK80pWjgg"><div><div style="width: 304px; height: 78px;"><iframe src="~/Scripts/AddPlace/anchor.html" title="Widget recaptcha" width="304" height="78" role="presentation" frameborder="0" scrolling="no"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
                             </div>
                         </div>
 
@@ -713,7 +713,6 @@
             </form>    <hr class="clear">
         </div>
 
-        
 
     </div>
 
@@ -730,21 +729,21 @@
                 <div class="col-xs-6 col-sm-2 col-lg-2">
                     <label class="bold">Places4All</label>
                     <ul class="list-unstyled">
-                        <li><a href="http://places4all.com/site/aboutus/">About us</a></li>
-                        <li><a href="http://places4all.com/site/blog/">Blog</a></li>
-                        <li><a href="http://places4all.com/site/media/">Media</a></li>
-                        <li><a href="http://places4all.com/site/partners/">Partners</a></li>
-                        <li><a href="http://places4all.com/p4all/Contact/Comment">Contacts</a></li>
+                        <li><a href="~/Site/AboutUs">About us</a></li>
+                        <li><a href="~/Site/Blog">Blog</a></li>
+                        <li><a href="~/Site/Media">Media</a></li>
+                        <li><a href="~/Site/Partners">Partners</a></li>
+                        <li><a href="~/Site/Contact">Contacts</a></li>
                     </ul>
                 </div>
 
                 <div class="col-xs-6 col-sm-2 col-lg-2">
                     <label class="bold">How it works</label>
                     <ul class="list-unstyled">
-                        <li><a href="http://places4all.azurewebsites.net/HowItWorks/#Methodology">Methodology</a></li>
-                        <li><a href="http://places4all.azurewebsites.net/HowItWorks/#WhoCanJoin">Who can join</a></li>
-                        <li><a href="http://places4all.azurewebsites.net/HowItWorks/#badge">The badge</a></li>
-                        <li><a href="http://places4all.azurewebsites.net/HowItWorks/#advantages">Advantages</a></li>
+                        <li><a href="~/HowItWorks/#Methodology">Methodology</a></li>
+                        <li><a href="~/HowItWorks/#WhoCanJoin">Who can join</a></li>
+                        <li><a href="~/HowItWorks/#badge">The badge</a></li>
+                        <li><a href="~/HowItWorks/#advantages">Advantages</a></li>
                     </ul>
                 </div>
 
@@ -784,4 +783,5 @@
         </a>
     </footer><a href="http://www.immensa.org/">
     </a><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
-</body
+
+    </body>
