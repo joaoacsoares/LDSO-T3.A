@@ -9731,4 +9731,28 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.item_borderless {
+  border: 0;
+  border-color: none;
+  background-color: #263238; }
 
+.big_button {
+  background-color: #960B1D;
+  color: #DDDDDD; }
+
+.simple_anchor {
+  text-decoration: none;
+  color: #DDDDDD; }
+
+.colored {
+  background-color: #263238; }
+
+.normalize {
+  margin: 20%;
+  height: 55%;
+  width: 55%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.white_bck {
+  background-color: #FFF; }

@@ -32,15 +32,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
-    views: {
-      'menuContent': {
-        templateUrl: 'search.html'
-      }
-    }
-  })
-
   .state('app.browse', {
       url: '/browse',
       views: {
@@ -68,6 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  
   .state('app.homepage', {
       url: '/homepage',
       views: {
@@ -77,6 +69,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+  
   .state('app.addplace', {
       url: '/AddPlace',
       views: {
@@ -86,6 +79,36 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+  
+  .state('app.search', {
+    url: '/Search',
+    views: {
+      'menuContent': {
+        templateUrl: 'search.html'
+      }
+    }
+  })
+    
+ .state('app.place', {
+      url: '/place',
+      views: {
+        'menuContent': {
+          templateUrl: 'place.html',
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+  
+  .state('app.audit', {
+      url: '/audit',
+      views: {
+        'menuContent': {
+          templateUrl: 'audit.html',
+          controller: 'PlaylistsCtrl'
+        }
+      }
+    })
+  
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/homepage');

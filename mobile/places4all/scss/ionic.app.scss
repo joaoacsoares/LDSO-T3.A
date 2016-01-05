@@ -21,3 +21,42 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+$places_red: #960B1D;
+$blue_bck: #263238;
+$places_text: #DDDDDD;
+
+
+.item_borderless {
+    border: 0;
+    border-color:
+    none;
+    background-color: $blue_bck;
+    
+}
+
+.big_button {
+    background-color: $places_red;
+    color:  $places_text;
+}
+
+.simple_anchor{
+    text-decoration: none;
+    color: $places_text;
+}
+
+.colored{
+    background-color: $blue_bck ;
+}
+
+.normalize {
+    margin: 20%;
+    height: 55%;
+    width: 55%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.white_bck {
+    background-color: #FFF;
+    
+}

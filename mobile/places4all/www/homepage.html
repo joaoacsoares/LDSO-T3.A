@@ -1,29 +1,28 @@
 <ion-view view-title="Places4All">
-  <ion-content>
-    <ion-list class="col col-75 col-offset-10">
-      <ion-item>
-          <img src="" alt="">
-      </ion-item>
-      <ion-item>
-          <label class="item item-input">
-            <input id="input_search" type="text" placeholder="write what you want to search for">
-          </label>
-          <form action="#/app/search.html" method="get" id="input_search">
-              <button type="submit" class="button col col-33 col-offset-33">
+  <ion-content class="colored">
+   <div>
+       <div class="row white_bck">
+           <img src="img/logo.png" alt="Places4All" class="normalize">
+       </div>
+    <ion-list class="col col-75 col-offset-10 colored">
+      <ion-item class="item_borderless">
+          <a href="#/app/Search" class="simple_anchor">
+              <button class="button big_button col col-33 col-offset-33">
                   Search
               </button>
-          </form>
+          </a>
       </ion-item>
-      <ion-item>
+      <ion-item class="item_borderless">
           <label class="col col-offset-50">or</label>
       </ion-item>
-      <ion-item>
-         <a href="#/app/AddPlace">
-              <button class="button col col-33 col-offset-33">
+      <ion-item class="item_borderless">
+         <a href="#/app/AddPlace" class="simple_anchor">
+              <button class="button big_button col col-33 col-offset-33">
                   Add Place
               </button>
           </a>
       </ion-item>
     </ion-list>
+    </div>
   </ion-content>
 </ion-view>
