@@ -1,0 +1,31 @@
+<!--
+<label>Search: <input ng-model="searchText"></label>
+<table id="searchTextResults">
+  <tr><th>Name</th><th>Phone</th></tr>
+  <tr ng-repeat="friend in friends | filter:searchText">
+    <td>{{friend.name}}</td>
+    <td>{{friend.phone}}</td>
+  </tr>
+</table>
+-->
+
+
+<ion-view view-title="Places4All">
+  <ion-content>
+     <ion-list class="col col-75 col-offset-10">
+      <!-- <ion-item ng-repeat="places in places" href="#/app/places/{{placeID}}"> -->
+       <ion-item>
+       <a href="#/app/place" class="row">
+        <div class="col col-66">
+         <h1>Nome place</h1>
+         <p>morada</p>
+         <h2>rate</h2>
+         </div>
+         <div class="col col-20">
+             <img class="image_right" src="img/ionic.png" alt="">
+         </div>
+         </a>
+       </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
