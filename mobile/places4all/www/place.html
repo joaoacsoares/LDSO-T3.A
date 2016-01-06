@@ -1,22 +1,20 @@
 <ion-view view-title="{{DesignacaoPT}}">
-  <ion-content>
+  <ion-content class="grey_bck">
     <ion-list>
         <ion-item>
           <!--  <img src="{{imageID}}" alt="places_image">-->
             <img src="img/ionic.png" alt="places_image">
         </ion-item>
-        <ion-item class="row">
+        <ion-item class="row colored">
            <div class="col col-75">
-                <h1 class="row">places name</h1>
+                <h1 class="row">place name</h1>
                 <p class="row">adress</p>
             </div>
             <div class="col col-25">
-               <a href="">
-                <img src="img/ionic.png" alt="">
-                </a>
             </div>
         </ion-item>
-        <ion-item class="row background_change">
+        <!--
+        <ion-item class="row">
             <div class="col col-50">
                <div class="col col-50 col-offset-25">
                 <img src="img/ionic.png" alt="">
@@ -32,19 +30,20 @@
                 </div>
             </div>
         </ion-item>
+        -->
         <ion-item>
-           <div class="col col-80 col-offset-10">
-            <div class="row">
-                <div class="col col-33"><a href="">
-                    <button class="button">Analyze Data</button>
+           <div class="grey_bck">
+                
+                <div><a href="#/app/audit">
+                    <button class="button big_button">Audit Place</button>
                 </a></div>
-                <div class="col col-33"><a href="#/app/audit">
-                    <button class="button">Audit Place</button>
+                   <div><a href="#/app/report">
+                    <button class="button big_button">Create Report</button>
                 </a></div>
-                   <div class="col col-33"><a href="">
-                    <button class="button">Create Rport</button>
+                <div><a href="#/app/analyze">
+                    <button class="button big_button">Analyze Data</button>
                 </a></div>
-            </div>
+                </a></div>
             </div>
         </ion-item>
     </ion-list>

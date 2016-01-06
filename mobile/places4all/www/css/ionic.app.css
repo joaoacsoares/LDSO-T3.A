@@ -3161,11 +3161,6 @@ sub {
 /**
  * Define consistent border, margin, and padding.
  */
-fieldset {
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-  border: 1px solid #c0c0c0; }
-
 /**
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
@@ -9738,14 +9733,24 @@ a.button {
 
 .big_button {
   background-color: #960B1D;
-  color: #DDDDDD; }
+  color: #DDDDDD;
+  width: 180px;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  margin-top: 5px; }
 
 .simple_anchor {
   text-decoration: none;
   color: #DDDDDD; }
 
 .colored {
-  background-color: #263238; }
+  background-color: #263238;
+  color: #DDDDDD;
+  text: #DDDDDD; }
+  .colored h1 {
+    color: #DDDDDD; }
+  .colored p {
+    color: #DDDDDD; }
 
 .normalize {
   margin: 20%;
@@ -9756,3 +9761,29 @@ a.button {
 
 .white_bck {
   background-color: #FFF; }
+
+.grey_bck {
+  background-color: #DDDDDD; }
+  .grey_bck ion-item {
+    background-color: #DDDDDD; }
+    .grey_bck ion-item div > h2 {
+      color: black; }
+
+.blue_bck {
+  background-color: #263238; }
+  .blue_bck h2 {
+    color: #DDDDDD; }
+
+.small_btn {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+  .small_btn p {
+    margin: 0;
+    border: 0;
+    padding: 0; }
+
+.category h2 {
+  margin-top: 15px;
+  border-top: 30px;
+  margin-bottom: 0px; }

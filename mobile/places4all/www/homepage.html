@@ -24,5 +24,10 @@
       </ion-item>
     </ion-list>
     </div>
+    <div ng-init="loadPlaces()">
+       <div ng-repeat="places in Places">
+            <h2>{{places.DesignacaoPT}}</h2>
+        </div>
+    </div>
   </ion-content>
 </ion-view>

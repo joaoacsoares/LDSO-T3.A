@@ -37,6 +37,10 @@ $places_text: #DDDDDD;
 .big_button {
     background-color: $places_red;
     color:  $places_text;
+    width: 180px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .simple_anchor{
@@ -46,6 +50,14 @@ $places_text: #DDDDDD;
 
 .colored{
     background-color: $blue_bck ;
+    color: $places_text;
+    text: $places_text;
+    h1{
+        color: $places_text;
+    }
+    p{
+        color: $places_text;
+    }
 }
 
 .normalize {
@@ -59,4 +71,41 @@ $places_text: #DDDDDD;
 .white_bck {
     background-color: #FFF;
     
+}
+
+.grey_bck {
+    background-color: $places_text;
+    ion-item{
+        background-color: $places_text;
+        div > h2{
+            color: black;
+        }
+    }
+}
+
+.blue_bck {
+    background-color: $blue_bck;
+    h2{
+        color: $places_text;
+    }
+}
+
+.small_btn {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    p{
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    
+}
+
+.category {
+    h2{
+        margin-top: 15px;
+        border-top: 30px;
+        margin-bottom: 0px;
+    }
 }

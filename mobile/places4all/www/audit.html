@@ -1,42 +1,65 @@
 <ion-view>
-    <ion-content>
+    <ion-content class="blue_bck">
         <div class="col col-80 col-offset-10">
-           <div class="row">
-                <div class="col col-50">
-                    <h1>Parking</h1>
-                    <button class="button">Audit Category</button>    
-                </div>
-                <div class="col col-50">
-                    <h1>External route</h1>
-                    <button class="button">Audit Category</button>   
-                </div>
+           <div class="row category">
+                <h2>Parking</h2>
             </div>
-            <div class="row">
-                <div class="col col-50">
-                    <h1>Internal route</h1>
-                    <button class="button">Audit Category</button>   
-                </div>
-                <div class="col col-50">
-                    <h1>Hallway</h1>
-                    <button class="button">Audit Category</button>   
-                </div>
+            <ion-list class="row grey_bck">
+                <ion-item class="row">
+                    <div class="audit_question">
+                        <h2>
+                            question
+                        </h2>
+                           <fieldset id="group1">
+                            <label>
+                                <input type="radio" value="" name="group1">  Conforme
+                            </label>
+                            <label>
+                                <input type="radio" value="" name="group1"> Não Conforme
+                            </label>
+                        </fieldset>
+                    </div> 
+                </ion-item>
+            </ion-list>
+            
+            <div class="row category">
+                <h2>External route</h2>
             </div>
-                <div class="row">
-                <div class="col col-50">
-                    <h1>Goods and services</h1>
-                    <button class="button">Audit Category</button>   
-                </div>
-                <div class="col col-50">
-                    <h1>Bathroom</h1>
-                    <button class="button">Audit Category</button>   
-                </div>
+            <ion-list class="row grey_bck">
+                <ion-item class="row">
+                    <div class="audit_question">
+                        <h2>
+                            question
+                        </h2>
+                        <fieldset id="group2">
+                            <label>
+                                <input type="radio" value="" name="group2"> Conforme
+                            </label>
+                            <label>
+                                <input type="radio" value="" name="group2"> Não Conforme
+                            </label>
+                        </fieldset>
+                    </div>
+                </ion-item>
+            </ion-list>
+            
+            <div class="row category">
+                <h2>Hallway</h2>
             </div>
             
-            <div class="col col-50 col-offset-25">
-                <button class="button big_button">
-                    Complete Audit
-                </button>
+            <div class="row category">
+                <h2>Interior route</h2>
+            </div>
+            
+            <div class="row category">
+                <h2>Bathroom</h2>
+            </div>
+            
+            <div class="row category">
+                <h2>Goods and services</h2>
             </div>
         </div>
+        
+        <button class="button big_button" type="submit">Submit Audit</button>
     </ion-content>
 </ion-view>
