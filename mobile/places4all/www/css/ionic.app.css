@@ -9730,6 +9730,8 @@ a.button {
   border: 0;
   border-color: none;
   background-color: #263238; }
+  .item_borderless label {
+    color: #DDDDDD; }
 
 .big_button {
   background-color: #960B1D;
@@ -9751,6 +9753,19 @@ a.button {
     color: #DDDDDD; }
   .colored p {
     color: #DDDDDD; }
+
+.colored2 {
+  background-color: #263238;
+  color: #DDDDDD;
+  text: #DDDDDD; }
+  .colored2 h1 {
+    color: #DDDDDD; }
+  .colored2 p {
+    color: #DDDDDD; }
+  .colored2 div {
+    background-color: #263238; }
+    .colored2 div p {
+      margin-left: 30px; }
 
 .normalize {
   margin: 20%;
@@ -9787,3 +9802,37 @@ a.button {
   margin-top: 15px;
   border-top: 30px;
   margin-bottom: 0px; }
+
+.img_div {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+  .img_div img {
+    height: 160px;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+
+.top_image {
+  width: 100%;
+  height: 30%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -15%; }
+
+.place_info ion-item {
+  padding: 0;
+  border: 0;
+  margin: 0; }
+
+.spacing_up {
+  margin-top: 40px; }
+
+.list_places div {
+  background-color: #263238; }
+  .list_places div p, .list_places div h1, .list_places div h2, .list_places div h3 {
+    color: #DDDDDD; }
+
+.grey_color {
+  color: #DDDDDD; }
